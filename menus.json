@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-05T23:20:00+01:00",
+ "updated": "2026-11-06T07:43:11+01:00",
  "week": 45,
  "restaurants": {
   "bredbar": {
-   "status": "ok",
+   "status": "fel",
    "days": {
     "2026-11-05": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Kalvmedaljonger med grön äppelsås, frästa haricots verts och potatismos eller stekt potatis"
+       "n": "Kalvfärsmedaljonger med grönpepparsås, frästa haricots verts och potatismos eller stekt potatis"
       },
       {
        "t": "fisk",
@@ -34,7 +34,8 @@
      ],
      "extra": "Pannkaksbuffé med tillbehör. Veckans tips: hälsotallrik med kyckling eller falafel, 145 kr."
     }
-   }
+   },
+   "note": "Dagens meny inte publicerad än"
   },
   "matronan": {
    "status": "ok",
@@ -317,6 +318,23 @@
       {
        "t": "kott",
        "n": "Svampfylld kyckling med peppargräddsås"
+      }
+     ],
+     "extra": "Dagens tips: laxen"
+    },
+    "2026-11-06": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Växtbaserad kålpudding med rårörda lingon"
+      },
+      {
+       "t": "fisk",
+       "n": "Ugnsbakad lax med gremolatasås"
+      },
+      {
+       "t": "kott",
+       "n": "Wallenbergare med rårörda lingon och gröna ärtor"
       }
      ],
      "extra": "Dagens tips: laxen"
