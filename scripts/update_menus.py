@@ -327,7 +327,7 @@ def main():
             res[key] = {"status": "ok", "days": dict(sorted(days.items()))}
             report.append(f"{key}: ok ({len(got['days'].get(today.isoformat(), {}).get('dishes', []))} rätter i dag)")
         except Exception as e:
-            res[key] = {"status": "fel", "note": str(e)[:120], "days": prev_days}
+            res[key] = {"status": "fel", "note": str(e)[-160:], "days": prev_days}
             report.append(f"{key}: FEL – {e}")
     new = {"updated": now.isoformat(timespec="seconds"), "week": today.isocalendar()[1], "restaurants": res}
     strip = lambda d: {k: v for k, v in d.items() if k != "updated"}
