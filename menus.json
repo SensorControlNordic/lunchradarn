@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T07:53:06+01:00",
+ "updated": "2026-11-06T07:56:25+01:00",
  "week": 45,
  "restaurants": {
   "bredbar": {
@@ -38,22 +38,22 @@
      "dishes": [
       {
        "t": "kott",
-       "n": "Bredbars schnitzel med lökanjovismix, bea, rödvinssås och stekt potatis"
+       "n": "Bredbars schnitzel serveras med lökanjovis mix, bea, rödvinssås och stekt potatis"
       },
       {
        "t": "fisk",
-       "n": "Stekt laxfilé med saffranssås, babyspenat och basmatiris"
+       "n": "Stekt laxfilé med saffransås, babyspenat och basmatiris"
       },
       {
        "t": "kott",
-       "n": "Örtmarinerad kycklingfilé med grönpepparsås, potatisgratäng och frästa haricots verts"
+       "n": "Örtmarinerad kycklingfilé med grönpepparsås, potatisgratäng och frästa haricot verts"
       },
       {
        "t": "veg",
        "n": "Stekt halloumi med myntayoghurt, mixsallad och stekt potatis"
       }
      ],
-     "extra": "Dagens extra: hemlagad äppelpaj med vaniljsås. Tips: hälsotallrik med kyckling eller falafel, 145 kr."
+     "extra": "Dagens extra: Bredbars hemlagade äppelpaj och vaniljsås. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr."
     }
    }
   },
@@ -72,7 +72,7 @@
       },
       {
        "t": "veg",
-       "n": "Friterad chèvre på salladsbädd med betor, honungsdijon och frön"
+       "n": "Friterad chevre på salladsbädd med betor, honungsdijon och frön"
       }
      ]
     },
@@ -80,15 +80,15 @@
      "dishes": [
       {
        "t": "kott",
-       "n": "Pankostekt kycklingfilé tonkatsu med ris, sesamcoleslaw, dijon och salladslök"
+       "n": "Pankostekt kycklingfilé Tonkatsu med ris, sesam coleslaw, dijon och salladslök"
       },
       {
        "t": "fisk",
-       "n": "Fiskgratäng med kummel och lax, potatismos och sparris"
+       "n": "Fiskgratäng med kummel och lax med potatismos och sparris"
       },
       {
        "t": "veg",
-       "n": "Friterad chèvre på salladsbädd med betor, honungsdijon och frön"
+       "n": "Friterad chevre på salladsbädd med betor, honungsdijon och frön"
       }
      ]
     },
@@ -96,15 +96,15 @@
      "dishes": [
       {
        "t": "kott",
-       "n": "Schnitzel med café de paris-smör, ärtor, rostad potatis, citron och rödvinssås"
+       "n": "Schnitzel med Café de Parissmör, ärtor, rostad potatis, citron och rödvinssås"
       },
       {
        "t": "fisk",
-       "n": "Havets wallenbergare med mos, brynt smör, ärtor och citron"
+       "n": "Havets Wallenbergare med mos, brynt smör, ärtor och citron"
       },
       {
        "t": "veg",
-       "n": "Broccoli- och blomkålsgratäng med ris och mozzarellasallad"
+       "n": "Broccoli och blomkålsgratäng med ris och mozzarellasallad"
       }
      ]
     },
@@ -120,7 +120,7 @@
       },
       {
        "t": "veg",
-       "n": "Broccoli- och blomkålsgratäng med ris och mozzarellasallad"
+       "n": "Broccoli och blomkålsgratäng med ris och mozzarellasallad"
       }
      ]
     },
@@ -128,11 +128,11 @@
      "dishes": [
       {
        "t": "kott",
-       "n": "American BBQ pork med skivad rostad potatis, coleslaw och chilibearnaise"
+       "n": "American bbq Pork med skivad rostad potatis, coleslaw och chilibearnaise"
       },
       {
        "t": "fisk",
-       "n": "Fish taco i tortillabröd med ris, mangosalsa och gräddfil"
+       "n": "Fish Taco i tortillabröd med ris, mangosalsa och gräddfil"
       },
       {
        "t": "veg",
@@ -157,16 +157,16 @@
       },
       {
        "t": "veg",
-       "n": "Tacobowl med quornfärs, rostad majs, picklad rödkål, tomatsalsa, bulgur och nachochips"
+       "n": "Tacobowl-quornfärs, rostad majs, picklad rödkål, tomatsalsa, bulgur chilidressing och nachochips"
       }
      ],
-     "extra": "Gottis till kaffet"
+     "extra": "Vi bjuder på gottis till kaffet"
     },
     "2026-11-03": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Schnitzel med café de paris-smör, rödvinssås och rostad potatis"
+       "n": "Schnitzel med café de parissmör, rödvinssås och rostad potatis"
       },
       {
        "t": "fisk",
@@ -174,10 +174,10 @@
       },
       {
        "t": "veg",
-       "n": "Palak paneer med halloumi och spenat, basmatiris"
+       "n": "Palak paneer med halloumi och spenat serveras med basmatiris"
       }
      ],
-     "extra": "Gottis till kaffet"
+     "extra": "Vi bjuder på gottis till kaffet"
     },
     "2026-11-04": {
      "dishes": [
@@ -187,20 +187,20 @@
       },
       {
        "t": "fisk",
-       "n": "Fisk florentine med spenat, vitvinssås och kokt potatis"
+       "n": "Fisk florentine med spenat och vitvivnssås serveras med kokt potatis"
       },
       {
        "t": "veg",
-       "n": "Pasta med svamp, grädde och picklad lök, toppad med grana padano"
+       "n": "Pasta med svamp, grädde och picklad lök toppas med grana padano"
       }
      ],
-     "extra": "Gottis till kaffet"
+     "extra": "Vi bjuder på gottis till kaffet"
     },
     "2026-11-05": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Butter chicken med basmatiris och haricots verts"
+       "n": "Butter chicken serveras med basmatirs och haricot verts"
       },
       {
        "t": "fisk",
@@ -208,10 +208,10 @@
       },
       {
        "t": "veg",
-       "n": "Fritters med bulgur, spenat och fetaost, örtkräm"
+       "n": "Fritters med bulgur, spenat och fetaost serveras med örtkräm"
       }
      ],
-     "extra": "Pannkakor med tillbehör"
+     "extra": "Vi bjuder på pannkakor med tillbehör"
     },
     "2026-11-06": {
      "dishes": [
@@ -221,14 +221,14 @@
       },
       {
        "t": "fisk",
-       "n": "Pasta med heta kräftstjärtar och grana padano"
+       "n": "Pasta med heta kräftstjärtar toppas med grana padano"
       },
       {
        "t": "veg",
-       "n": "Bakad chèvre med rostade rödbetor, balsamicokräm och valnötter"
+       "n": "Bakad chevre med rostade rödbetor serveras med balsamicokräm och valnötter"
       }
      ],
-     "extra": "Fredagsgottis: äppelpaj med vaniljsås"
+     "extra": "Fredagsgottis - Äppelpaj med vaniljsås"
     }
    }
   },
@@ -239,15 +239,15 @@
      "dishes": [
       {
        "t": "veg",
-       "n": "Stekt fetaost med rostad potatis och kronärtskocka"
+       "n": "Stekt fetaost med rostad potatis, kronärtskocka"
       },
       {
        "t": "fisk",
-       "n": "Dubbelpanerad flundrafilé med tartarsås, citron och kokt potatis"
+       "n": "Stekt dubbelpanerad flundrafilè med tartarsås, citron och kokt potatis"
       },
       {
        "t": "kott",
-       "n": "Boeuf bourguignon med bacon, champinjoner och potatispuré"
+       "n": "Boeuf bourguignon med bacon, champinjoner och potatispurè"
       }
      ],
      "extra": "Flera sallader varje dag"
@@ -260,7 +260,7 @@
       },
       {
        "t": "fisk",
-       "n": "Örthalstrad kungsfiskfilé med hummerfond, parmesankrossad potatis och hyvlad zucchini"
+       "n": "Örthalstrad kungsfiskfilè med smörad hummerfond, parmesankrossad potatis, hyvlad zuccini"
       },
       {
        "t": "kott",
@@ -273,15 +273,15 @@
      "dishes": [
       {
        "t": "veg",
-       "n": "Parmesanstekt aubergine med tomatsås och risotto"
+       "n": "Parmesanstekt aubergin med tomatsås och risotto"
       },
       {
        "t": "fisk",
-       "n": "Parmesanstekt kummelfilé med tomatsås och risotto"
+       "n": "Parmesanstekt kummelfilè med tomatsås och risotto"
       },
       {
        "t": "kott",
-       "n": "Kalvfärsbiff med svampsås, pressgurka, gelé och potatispuré"
+       "n": "Kalvfärsbiff med svampsås, pressgurka, gelè och potatispurè"
       }
      ],
      "extra": "Flera sallader varje dag"
@@ -290,15 +290,15 @@
      "dishes": [
       {
        "t": "veg",
-       "n": "Blomkålsfritters med chipotledressing och rostad potatis"
+       "n": "Blomkålsfritters med chipotlerippel och rostad potatis"
       },
       {
        "t": "fisk",
-       "n": "Krämig fiskgryta med vitvinssås, tomat, selleri och saffransaioli"
+       "n": "Krämig fiskgryta med vittvinsås, tomat, selleri, saffransaioli"
       },
       {
        "t": "kott",
-       "n": "Bacon- och cheeseburgare med chipotledressing och klyftpotatis"
+       "n": "Bacon/cheeseburgare med chipotledressing och klyftpotatis"
       }
      ],
      "extra": "Flera sallader varje dag"
@@ -311,7 +311,7 @@
       },
       {
        "t": "fisk",
-       "n": "Senapsstekt strömming med brynt smör, örter och potatispuré"
+       "n": "Senapstekt strömmingsflundra med brynt smör, örter och potatispurè"
       },
       {
        "t": "kott",
@@ -354,10 +354,10 @@
       },
       {
        "t": "kott",
-       "n": "Wallenbergare med rårörda lingon och gröna ärtor"
+       "n": "Wallenbergare med rårörda lingon, gröna ärtor"
       }
      ],
-     "extra": "Dagens tips: laxen"
+     "extra": "Dagens tips: ugnsbakad lax"
     }
    }
   }
