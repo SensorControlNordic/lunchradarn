@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T20:11:48+01:00",
+ "updated": "2026-11-06T20:16:12+01:00",
  "week": 45,
  "restaurants": {
   "bredbar": {
@@ -372,9 +372,109 @@
    }
   },
   "lillaangel": {
-   "status": "fel",
-   "note": "HTTPSConnectionPool(host='www.lillaangel.com', port=443): Max retries exceeded with url: /frosunda/lunch/ (Caused by New",
-   "days": {}
+   "status": "ok",
+   "days": {
+    "2026-11-02": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Oxjärpar med potatismos, gräddsås, rårörda lingon och pressgurka"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt lax med kokt potatis, grönsaker, dill och citronsås"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås"
+      }
+     ]
+    },
+    "2026-11-03": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Biff à la Lindström med stekt potatis, stekt ägg och kaprissmör"
+      },
+      {
+       "t": "fisk",
+       "n": "Kummelfilé med smörstekt potatis och gräslökssås"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås"
+      }
+     ]
+    },
+    "2026-11-04": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Skomakarlåda på entrecôte med potatismos, bacon, purjolök och rödvinssås"
+      },
+      {
+       "t": "fisk",
+       "n": "Panerad spättafilé med potatismos eller kokt potatis och remouladsås"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås"
+      }
+     ]
+    },
+    "2026-11-05": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Långbakad högrev med potatismos, haricots verts och rödvinssky"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt lax med potatis, currysås och gröna ärtor"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås"
+      }
+     ]
+    },
+    "2026-11-06": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Ryggbiff med rostad potatis, stekta grönsaker och bearnaisesås"
+      },
+      {
+       "t": "fisk",
+       "n": "Grillad lax med rostad potatis, stekta grönsaker och hollandaisesås"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås"
+      }
+     ]
+    }
+   }
   }
  }
 }
