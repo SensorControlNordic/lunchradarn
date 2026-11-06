@@ -317,7 +317,7 @@ Rules:
   e.g. "Raggmunk (Swedish potato pancake) with fried pork belly and lingonberries",
   "Wallenbergare (veal patty) with mashed potatoes, browned butter and lingonberries".
 - Translate fish names to their usual English names (torsk = cod, kummel = hake, strömming = Baltic herring, sej = pollock).
-- Do not add allergy information, prices or anything not in the original."""
+- Translate faithfully: do not add ingredients, cooking methods, allergy information, prices or anything else not in the original."""
 
 
 def translate_new(texts, cache):
