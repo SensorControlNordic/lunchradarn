@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T10:43:27+01:00",
+ "updated": "2026-11-06T20:11:48+01:00",
  "week": 45,
  "restaurants": {
   "bredbar": {
@@ -66,7 +66,8 @@
    }
   },
   "matronan": {
-   "status": "ok",
+   "status": "fel",
+   "note": "fel vecka på sidan (v. 46)",
    "days": {
     "2026-11-02": {
      "dishes": [
@@ -241,7 +242,8 @@
    }
   },
   "greven": {
-   "status": "ok",
+   "status": "fel",
+   "note": "hittade inga rätter för denna vecka",
    "days": {
     "2026-11-02": {
      "dishes": [
@@ -368,6 +370,11 @@
      "extra": "Dagens tips: ugnsbakad lax"
     }
    }
+  },
+  "lillaangel": {
+   "status": "fel",
+   "note": "HTTPSConnectionPool(host='www.lillaangel.com', port=443): Max retries exceeded with url: /frosunda/lunch/ (Caused by New",
+   "days": {}
   }
  }
 }
