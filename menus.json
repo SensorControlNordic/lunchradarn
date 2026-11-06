@@ -1,0 +1,327 @@
+{
+ "updated": "2026-11-05T23:20:00+01:00",
+ "week": 45,
+ "restaurants": {
+  "bredbar": {
+   "status": "ok",
+   "days": {
+    "2026-11-05": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Kalvmedaljonger med grön äppelsås, frästa haricots verts och potatismos eller stekt potatis"
+      },
+      {
+       "t": "fisk",
+       "n": "Panerad torsk med skagenröra och dillslungad potatis"
+      },
+      {
+       "t": "kott",
+       "n": "Boeuf bourguignon med basmatiris"
+      },
+      {
+       "t": "kott",
+       "n": "Spaghetti carbonara med grana padano"
+      },
+      {
+       "t": "veg",
+       "n": "Morots- och zucchinibiffar med myntayoghurt, stekt potatis och mixsallad"
+      },
+      {
+       "t": "soppa",
+       "n": "Kantarellsoppa"
+      }
+     ],
+     "extra": "Pannkaksbuffé med tillbehör. Veckans tips: hälsotallrik med kyckling eller falafel, 145 kr."
+    }
+   }
+  },
+  "matronan": {
+   "status": "ok",
+   "days": {
+    "2026-11-02": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Pljeskavica med råstekt potatis, ajvar, bea, gräddfil och löksallad"
+      },
+      {
+       "t": "fisk",
+       "n": "Halstrad lax på spenatbädd med champinjonsås, kokt potatis och citron"
+      },
+      {
+       "t": "veg",
+       "n": "Friterad chèvre på salladsbädd med betor, honungsdijon och frön"
+      }
+     ]
+    },
+    "2026-11-03": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Pankostekt kycklingfilé tonkatsu med ris, sesamcoleslaw, dijon och salladslök"
+      },
+      {
+       "t": "fisk",
+       "n": "Fiskgratäng med kummel och lax, potatismos och sparris"
+      },
+      {
+       "t": "veg",
+       "n": "Friterad chèvre på salladsbädd med betor, honungsdijon och frön"
+      }
+     ]
+    },
+    "2026-11-04": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Schnitzel med café de paris-smör, ärtor, rostad potatis, citron och rödvinssås"
+      },
+      {
+       "t": "fisk",
+       "n": "Havets wallenbergare med mos, brynt smör, ärtor och citron"
+      },
+      {
+       "t": "veg",
+       "n": "Broccoli- och blomkålsgratäng med ris och mozzarellasallad"
+      }
+     ]
+    },
+    "2026-11-05": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Kalvfärsbiffar med pepprig gräddsås, kokt potatis och gröna bönor"
+      },
+      {
+       "t": "fisk",
+       "n": "Mandelfisk med krossad potatis, brynt dillsmör och citron"
+      },
+      {
+       "t": "veg",
+       "n": "Broccoli- och blomkålsgratäng med ris och mozzarellasallad"
+      }
+     ]
+    },
+    "2026-11-06": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "American BBQ pork med skivad rostad potatis, coleslaw och chilibearnaise"
+      },
+      {
+       "t": "fisk",
+       "n": "Fish taco i tortillabröd med ris, mangosalsa och gräddfil"
+      },
+      {
+       "t": "veg",
+       "n": "Grönsaksgryta med ris, fetaost och frön"
+      }
+     ]
+    }
+   }
+  },
+  "bramat": {
+   "status": "ok",
+   "days": {
+    "2026-11-02": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Yakiniku med basmatiris, sesamkräm och purjolök"
+      },
+      {
+       "t": "fisk",
+       "n": "Ugnsbakad fisk med skirat smör, kapris, rödbetor och kokt potatis"
+      },
+      {
+       "t": "veg",
+       "n": "Tacobowl med quornfärs, rostad majs, picklad rödkål, tomatsalsa, bulgur och nachochips"
+      }
+     ],
+     "extra": "Gottis till kaffet"
+    },
+    "2026-11-03": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Schnitzel med café de paris-smör, rödvinssås och rostad potatis"
+      },
+      {
+       "t": "fisk",
+       "n": "Saffransdoftande fiskgryta med handskalade räkor, aioli och krutonger"
+      },
+      {
+       "t": "veg",
+       "n": "Palak paneer med halloumi och spenat, basmatiris"
+      }
+     ],
+     "extra": "Gottis till kaffet"
+    },
+    "2026-11-04": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Wallenbergare med potatismos, skirat smör och lingon"
+      },
+      {
+       "t": "fisk",
+       "n": "Fisk florentine med spenat, vitvinssås och kokt potatis"
+      },
+      {
+       "t": "veg",
+       "n": "Pasta med svamp, grädde och picklad lök, toppad med grana padano"
+      }
+     ],
+     "extra": "Gottis till kaffet"
+    },
+    "2026-11-05": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Butter chicken med basmatiris och haricots verts"
+      },
+      {
+       "t": "fisk",
+       "n": "Fiskgryta bouillabaisse med handskalade räkor, aioli och krutonger"
+      },
+      {
+       "t": "veg",
+       "n": "Fritters med bulgur, spenat och fetaost, örtkräm"
+      }
+     ],
+     "extra": "Pannkakor med tillbehör"
+    },
+    "2026-11-06": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Nattbakad kalvtritip med bearnaise, rödvinssås och rostad potatis"
+      },
+      {
+       "t": "fisk",
+       "n": "Pasta med heta kräftstjärtar och grana padano"
+      },
+      {
+       "t": "veg",
+       "n": "Bakad chèvre med rostade rödbetor, balsamicokräm och valnötter"
+      }
+     ],
+     "extra": "Fredagsgottis: äppelpaj med vaniljsås"
+    }
+   }
+  },
+  "greven": {
+   "status": "ok",
+   "days": {
+    "2026-11-02": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Stekt fetaost med rostad potatis och kronärtskocka"
+      },
+      {
+       "t": "fisk",
+       "n": "Dubbelpanerad flundrafilé med tartarsås, citron och kokt potatis"
+      },
+      {
+       "t": "kott",
+       "n": "Boeuf bourguignon med bacon, champinjoner och potatispuré"
+      }
+     ],
+     "extra": "Flera sallader varje dag"
+    },
+    "2026-11-03": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Pasta pesto med caponata, mozzarella och ruccola"
+      },
+      {
+       "t": "fisk",
+       "n": "Örthalstrad kungsfiskfilé med hummerfond, parmesankrossad potatis och hyvlad zucchini"
+      },
+      {
+       "t": "kott",
+       "n": "Raggmunk med stekt fläsk och rårörda lingon"
+      }
+     ],
+     "extra": "Flera sallader varje dag"
+    },
+    "2026-11-04": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Parmesanstekt aubergine med tomatsås och risotto"
+      },
+      {
+       "t": "fisk",
+       "n": "Parmesanstekt kummelfilé med tomatsås och risotto"
+      },
+      {
+       "t": "kott",
+       "n": "Kalvfärsbiff med svampsås, pressgurka, gelé och potatispuré"
+      }
+     ],
+     "extra": "Flera sallader varje dag"
+    },
+    "2026-11-05": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Blomkålsfritters med chipotledressing och rostad potatis"
+      },
+      {
+       "t": "fisk",
+       "n": "Krämig fiskgryta med vitvinssås, tomat, selleri och saffransaioli"
+      },
+      {
+       "t": "kott",
+       "n": "Bacon- och cheeseburgare med chipotledressing och klyftpotatis"
+      }
+     ],
+     "extra": "Flera sallader varje dag"
+    },
+    "2026-11-06": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Vegetarisk ramen"
+      },
+      {
+       "t": "fisk",
+       "n": "Senapsstekt strömming med brynt smör, örter och potatispuré"
+      },
+      {
+       "t": "kott",
+       "n": "Fläskschnitzel med hollandaise, pommes och tomatsallad"
+      }
+     ],
+     "extra": "Flera sallader varje dag"
+    }
+   }
+  },
+  "kitchenclub": {
+   "status": "ok",
+   "days": {
+    "2026-11-05": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Asiatisk currysoppa med gyoza, kokos, pannkakor, sylt och vaniljvisp"
+      },
+      {
+       "t": "fisk",
+       "n": "Citron- och salviabakad lax med örtsås och rostad fänkål"
+      },
+      {
+       "t": "kott",
+       "n": "Svampfylld kyckling med peppargräddsås"
+      }
+     ],
+     "extra": "Dagens tips: laxen"
+    }
+   }
+  }
+ }
+}
