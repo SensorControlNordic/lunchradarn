@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-06T07:43:11+01:00",
+ "updated": "2026-11-06T07:53:06+01:00",
  "week": 45,
  "restaurants": {
   "bredbar": {
-   "status": "fel",
+   "status": "ok",
    "days": {
     "2026-11-05": {
      "dishes": [
@@ -33,9 +33,29 @@
       }
      ],
      "extra": "Pannkaksbuffé med tillbehör. Veckans tips: hälsotallrik med kyckling eller falafel, 145 kr."
+    },
+    "2026-11-06": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Bredbars schnitzel med lökanjovismix, bea, rödvinssås och stekt potatis"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt laxfilé med saffranssås, babyspenat och basmatiris"
+      },
+      {
+       "t": "kott",
+       "n": "Örtmarinerad kycklingfilé med grönpepparsås, potatisgratäng och frästa haricots verts"
+      },
+      {
+       "t": "veg",
+       "n": "Stekt halloumi med myntayoghurt, mixsallad och stekt potatis"
+      }
+     ],
+     "extra": "Dagens extra: hemlagad äppelpaj med vaniljsås. Tips: hälsotallrik med kyckling eller falafel, 145 kr."
     }
-   },
-   "note": "Dagens meny inte publicerad än"
+   }
   },
   "matronan": {
    "status": "ok",
