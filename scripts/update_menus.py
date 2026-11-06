@@ -6,6 +6,10 @@ Läser bara restaurangernas egna, öppna sidor. Kvartersmenyn och andra sidor
 som stoppar automatiska läsare används aldrig.
 
 Test utan nätverk:  python3 scripts/update_menus.py --offline <mapp med .txt> --date 2026-11-06
+
+Engelsk översättning: om miljövariabeln ANTHROPIC_API_KEY finns översätts nya
+rätter med Claude API och sparas i translations.json, så varje text bara
+översätts en gång. Utan nyckel (eller om API:t inte svarar) blir sidan svensk.
 """
 import argparse, datetime as dt, json, os, re, sys
 from zoneinfo import ZoneInfo
@@ -14,6 +18,8 @@ TZ = ZoneInfo("Europe/Stockholm")
 UA = "Mozilla/5.0 (compatible; SCN-Lunchradarn/1.0; intern lunchsida)"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.environ.get("LR_OUT") or os.path.join(ROOT, "menus.json")
+TR_OUT = os.environ.get("LR_TR_OUT") or os.path.join(ROOT, "translations.json")
+TR_MODEL = os.environ.get("LR_MODEL") or "claude-sonnet-5-5"
 
 SOURCES = {
     "bredbar": "https://bredbarsolna.se/dagens-lunch-frosunda/",
@@ -301,6 +307,90 @@ def fetch_text(key):
     return t
 
 
+# ---------- engelska ----------
+TR_PROMPT = """You translate Swedish lunch-menu items for international guests visiting an office in Solna, Sweden.
+Return ONLY a JSON object mapping each input id to its English translation.
+Rules:
+- Natural, appetising menu English; keep it about as short as the original.
+- Keep dish names that are already international (carbonara, ramen, tonkatsu, bearnaise, aioli) as they are.
+- For typically Swedish dishes keep the Swedish name and add a short explanation in parentheses,
+  e.g. "Raggmunk (Swedish potato pancake) with fried pork belly and lingonberries",
+  "Wallenbergare (veal patty) with mashed potatoes, browned butter and lingonberries".
+- Translate fish names to their usual English names (torsk = cod, kummel = hake, strömming = Baltic herring, sej = pollock).
+- Do not add allergy information, prices or anything not in the original."""
+
+
+def translate_new(texts, cache):
+    """Översätter texter som saknas i cache. Returnerar antal nya översättningar."""
+    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    todo = sorted({t for t in texts if t and t not in cache})
+    if not todo or not key:
+        if todo:
+            print(f"Översättning: {len(todo)} texter saknar engelska (ingen ANTHROPIC_API_KEY).")
+        return 0
+    import requests
+    done = 0
+    for i in range(0, len(todo), 40):
+        chunk = todo[i:i + 40]
+        items = {str(n): t for n, t in enumerate(chunk)}
+        try:
+            r = requests.post(
+                "https://api.anthropic.com/v1/messages",
+                headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+                json={"model": TR_MODEL, "max_tokens": 4000, "system": TR_PROMPT,
+                      "messages": [{"role": "user", "content": json.dumps(items, ensure_ascii=False)}]},
+                timeout=120)
+            if r.status_code != 200:
+                print(f"Översättning: API-fel {r.status_code}: {r.text[:300]}")
+                return done
+            out = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
+            m = re.search(r"\{.*\}", out, re.S)
+            got = json.loads(m.group(0)) if m else {}
+            for n, t in items.items():
+                en = got.get(n)
+                if isinstance(en, str) and en.strip():
+                    cache[t] = en.strip()
+                    done += 1
+        except Exception as e:
+            print(f"Översättning: misslyckades – {e}")
+            return done
+    print(f"Översättning: {done} nya texter översatta ({TR_MODEL}).")
+    return done
+
+
+def add_english(res):
+    try:
+        cache = json.load(open(TR_OUT, encoding="utf-8"))
+    except Exception:
+        cache = {}
+    texts = []
+    for r in res.values():
+        for day in r.get("days", {}).values():
+            texts += [d["n"] for d in day.get("dishes", [])]
+            if day.get("extra"):
+                texts.append(day["extra"])
+    if not os.environ.get("LR_NO_TRANSLATE"):
+        translate_new(texts, cache)
+    for r in res.values():
+        for day in r.get("days", {}).values():
+            for d in day.get("dishes", []):
+                d.pop("en", None)
+                if d["n"] in cache:
+                    d["en"] = cache[d["n"]]
+            day.pop("extra_en", None)
+            if day.get("extra") and day["extra"] in cache:
+                day["extra_en"] = cache[day["extra"]]
+    # spara bara det som används nu, så filen inte växer för evigt
+    keep = {t: cache[t] for t in sorted(set(texts)) if t in cache}
+    old_keep = None
+    try:
+        old_keep = json.load(open(TR_OUT, encoding="utf-8"))
+    except Exception:
+        pass
+    if keep != old_keep:
+        json.dump(keep, open(TR_OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--offline")
@@ -329,6 +419,7 @@ def main():
         except Exception as e:
             res[key] = {"status": "fel", "note": str(e)[-160:], "days": prev_days}
             report.append(f"{key}: FEL – {e}")
+    add_english(res)
     new = {"updated": now.isoformat(timespec="seconds"), "week": today.isocalendar()[1], "restaurants": res}
     strip = lambda d: {k: v for k, v in d.items() if k != "updated"}
     changed = strip(new) != strip(old)

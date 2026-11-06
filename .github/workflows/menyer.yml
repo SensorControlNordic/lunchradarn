@@ -42,12 +42,14 @@ jobs:
 
       - name: Hämta menyer
         run: python scripts/update_menus.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Spara menus.json
         run: |
           git config user.name "Lunchradarn"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add menus.json
+          git add menus.json translations.json
           if ! git diff --cached --quiet; then
             git commit -m "Menyer $(TZ=Europe/Stockholm date '+%F %H:%M')"
             git pull --rebase origin main

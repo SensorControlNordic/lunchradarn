@@ -67,6 +67,9 @@ main{max-width:1180px;margin:0 auto;padding:22px 20px 40px;display:flex;flex-dir
 .chip .dot{width:9px;height:9px;border-radius:50%;background:var(--muted)}
 .chip[aria-pressed="true"]{border-color:var(--text);background:var(--text);color:var(--surface)}
 .chip[aria-pressed="true"] .dot{box-shadow:0 0 0 2px var(--surface)}
+.lang{display:inline-flex;border:2px solid var(--ink);border-radius:999px;overflow:hidden;font-family:var(--font-display);font-weight:600;letter-spacing:.05em}
+.lang button{border:0;background:transparent;color:var(--ink);font:inherit;font-size:1rem;padding:6px 13px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
 .spin{border:0;background:var(--red);color:#fff;font-family:var(--font-display);font-weight:600;font-size:1.15rem;letter-spacing:.04em;text-transform:uppercase;padding:11px 20px;border-radius:10px;cursor:pointer;box-shadow:0 2px 0 var(--red-deep)}
 .spin:hover{background:var(--red-deep)}
 .pick{display:none;background:var(--surface);border:1.5px solid var(--line);border-left:6px solid var(--red);border-radius:12px;padding:14px 18px;gap:4px;flex-direction:column}
@@ -96,6 +99,7 @@ ul.dishes{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;
 .dishes li{display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:baseline;padding-left:10px;border-left:3px solid var(--c,var(--muted))}
 .dishes li.dim{opacity:.28}
 .dishes .t{font-family:var(--font-display);font-weight:600;text-transform:uppercase;font-size:.85rem;letter-spacing:.05em;color:var(--c,var(--muted))}
+.noen{color:var(--muted);font-size:.82em}
 .extra{font-size:.93rem;color:var(--muted);margin:0}
 .empty{color:var(--muted);margin:0}
 .src{margin-top:auto;font-size:.8rem;color:var(--muted);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:9px}
@@ -121,16 +125,16 @@ footer{max-width:1180px;margin:0 auto;padding:0 20px 36px;color:var(--muted);fon
       <img src="scn-logo-white.png" alt="SCN">
       <h1>Lunch<span>radarn</span></h1>
       <div class="dateline" id="dateline">&nbsp;</div>
-      <p class="tagline">Dagens lunch inom tio minuters promenad från Gustav III:s boulevard 32. Menyerna hämtas automatiskt varje vardag.</p>
+      <p class="tagline" data-i18n="tagline">Dagens lunch inom tio minuters promenad från Gustav III:s boulevard 32. Menyerna hämtas automatiskt varje vardag.</p>
       <div class="hunger" aria-live="polite">
-        <div class="hunger-row"><span>Hungersensor</span><b id="hungerVal">–</b></div>
+        <div class="hunger-row"><span data-i18n="hunger">Hungersensor</span><b id="hungerVal">–</b></div>
         <div class="meter"><i id="hungerBar"></i></div>
         <div class="hunger-msg" id="hungerMsg">&nbsp;</div>
       </div>
     </div>
     <div class="radar-wrap">
       <canvas id="radar" width="460" height="460" role="img" aria-label="Radar som visar lunchställena runt kontoret, norr uppåt"></canvas>
-      <div class="radar-cap">Kontoret i mitten · norr uppåt</div>
+      <div class="radar-cap" data-i18n="radarCap">Kontoret i mitten · norr uppåt</div>
     </div>
   </div>
 </header>
@@ -138,12 +142,15 @@ footer{max-width:1180px;margin:0 auto;padding:0 20px 36px;color:var(--muted);fon
 <main>
   <div class="controls">
     <div class="chips" role="group" aria-label="Visa rätter">
-      <button class="chip" id="f-alla" data-f="alla" aria-pressed="true"><span class="dot"></span>Alla</button>
-      <button class="chip" id="f-kott" data-f="kott" aria-pressed="false"><span class="dot" style="background:var(--kott)"></span>Kött</button>
-      <button class="chip" id="f-fisk" data-f="fisk" aria-pressed="false"><span class="dot" style="background:var(--fisk)"></span>Fisk</button>
-      <button class="chip" id="f-veg" data-f="veg" aria-pressed="false"><span class="dot" style="background:var(--veg)"></span>Vegetariskt</button>
+      <button class="chip" id="f-alla" data-f="alla" aria-pressed="true"><span class="dot"></span><span data-i18n="all">Alla</span></button>
+      <button class="chip" id="f-kott" data-f="kott" aria-pressed="false"><span class="dot" style="background:var(--kott)"></span><span data-i18n="kott">Kött</span></button>
+      <button class="chip" id="f-fisk" data-f="fisk" aria-pressed="false"><span class="dot" style="background:var(--fisk)"></span><span data-i18n="fisk">Fisk</span></button>
+      <button class="chip" id="f-veg" data-f="veg" aria-pressed="false"><span class="dot" style="background:var(--veg)"></span><span data-i18n="vegLong">Vegetariskt</span></button>
     </div>
-    <button class="spin" id="spin">Kan inte bestämma mig</button>
+    <div class="lang" role="group" aria-label="Språk / Language">
+      <button id="l-sv" data-l="sv" aria-pressed="true" lang="sv">SV</button><button id="l-en" data-l="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <button class="spin" id="spin" data-i18n="spin">Kan inte bestämma mig</button>
   </div>
   <div class="pick" id="pick" aria-live="polite">
     <span class="lbl" id="pickLbl">Radarn föreslår</span>
@@ -156,7 +163,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 20px 36px;color:var(--muted);fon
 
 <footer>
   <span id="updated">&nbsp;</span>
-  <span>Gångtiderna är ungefärliga. Priser och rätter kan ändras, kolla gärna på plats.</span>
+  <span data-i18n="disclaimer">Gångtiderna är ungefärliga. Priser och rätter kan ändras, kolla gärna på plats.</span>
 </footer>
 
 <script type="application/json" id="fallback">{"updated": "2026-11-05T23:20:00+01:00", "week": 45, "restaurants": {"bredbar": {"status": "ok", "days": {"2026-11-05": {"dishes": [{"t": "kott", "n": "Kalvmedaljonger med grön äppelsås, frästa haricots verts och potatismos eller stekt potatis"}, {"t": "fisk", "n": "Panerad torsk med skagenröra och dillslungad potatis"}, {"t": "kott", "n": "Boeuf bourguignon med basmatiris"}, {"t": "kott", "n": "Spaghetti carbonara med grana padano"}, {"t": "veg", "n": "Morots- och zucchinibiffar med myntayoghurt, stekt potatis och mixsallad"}, {"t": "soppa", "n": "Kantarellsoppa"}], "extra": "Pannkaksbuffé med tillbehör. Veckans tips: hälsotallrik med kyckling eller falafel, 145 kr."}}}, "matronan": {"status": "ok", "days": {"2026-11-02": {"dishes": [{"t": "kott", "n": "Pljeskavica med råstekt potatis, ajvar, bea, gräddfil och löksallad"}, {"t": "fisk", "n": "Halstrad lax på spenatbädd med champinjonsås, kokt potatis och citron"}, {"t": "veg", "n": "Friterad chèvre på salladsbädd med betor, honungsdijon och frön"}]}, "2026-11-03": {"dishes": [{"t": "kott", "n": "Pankostekt kycklingfilé tonkatsu med ris, sesamcoleslaw, dijon och salladslök"}, {"t": "fisk", "n": "Fiskgratäng med kummel och lax, potatismos och sparris"}, {"t": "veg", "n": "Friterad chèvre på salladsbädd med betor, honungsdijon och frön"}]}, "2026-11-04": {"dishes": [{"t": "kott", "n": "Schnitzel med café de paris-smör, ärtor, rostad potatis, citron och rödvinssås"}, {"t": "fisk", "n": "Havets wallenbergare med mos, brynt smör, ärtor och citron"}, {"t": "veg", "n": "Broccoli- och blomkålsgratäng med ris och mozzarellasallad"}]}, "2026-11-05": {"dishes": [{"t": "kott", "n": "Kalvfärsbiffar med pepprig gräddsås, kokt potatis och gröna bönor"}, {"t": "fisk", "n": "Mandelfisk med krossad potatis, brynt dillsmör och citron"}, {"t": "veg", "n": "Broccoli- och blomkålsgratäng med ris och mozzarellasallad"}]}, "2026-11-06": {"dishes": [{"t": "kott", "n": "American BBQ pork med skivad rostad potatis, coleslaw och chilibearnaise"}, {"t": "fisk", "n": "Fish taco i tortillabröd med ris, mangosalsa och gräddfil"}, {"t": "veg", "n": "Grönsaksgryta med ris, fetaost och frön"}]}}}, "bramat": {"status": "ok", "days": {"2026-11-02": {"dishes": [{"t": "kott", "n": "Yakiniku med basmatiris, sesamkräm och purjolök"}, {"t": "fisk", "n": "Ugnsbakad fisk med skirat smör, kapris, rödbetor och kokt potatis"}, {"t": "veg", "n": "Tacobowl med quornfärs, rostad majs, picklad rödkål, tomatsalsa, bulgur och nachochips"}], "extra": "Gottis till kaffet"}, "2026-11-03": {"dishes": [{"t": "kott", "n": "Schnitzel med café de paris-smör, rödvinssås och rostad potatis"}, {"t": "fisk", "n": "Saffransdoftande fiskgryta med handskalade räkor, aioli och krutonger"}, {"t": "veg", "n": "Palak paneer med halloumi och spenat, basmatiris"}], "extra": "Gottis till kaffet"}, "2026-11-04": {"dishes": [{"t": "kott", "n": "Wallenbergare med potatismos, skirat smör och lingon"}, {"t": "fisk", "n": "Fisk florentine med spenat, vitvinssås och kokt potatis"}, {"t": "veg", "n": "Pasta med svamp, grädde och picklad lök, toppad med grana padano"}], "extra": "Gottis till kaffet"}, "2026-11-05": {"dishes": [{"t": "kott", "n": "Butter chicken med basmatiris och haricots verts"}, {"t": "fisk", "n": "Fiskgryta bouillabaisse med handskalade räkor, aioli och krutonger"}, {"t": "veg", "n": "Fritters med bulgur, spenat och fetaost, örtkräm"}], "extra": "Pannkakor med tillbehör"}, "2026-11-06": {"dishes": [{"t": "kott", "n": "Nattbakad kalvtritip med bearnaise, rödvinssås och rostad potatis"}, {"t": "fisk", "n": "Pasta med heta kräftstjärtar och grana padano"}, {"t": "veg", "n": "Bakad chèvre med rostade rödbetor, balsamicokräm och valnötter"}], "extra": "Fredagsgottis: äppelpaj med vaniljsås"}}}, "greven": {"status": "ok", "days": {"2026-11-02": {"dishes": [{"t": "veg", "n": "Stekt fetaost med rostad potatis och kronärtskocka"}, {"t": "fisk", "n": "Dubbelpanerad flundrafilé med tartarsås, citron och kokt potatis"}, {"t": "kott", "n": "Boeuf bourguignon med bacon, champinjoner och potatispuré"}], "extra": "Flera sallader varje dag"}, "2026-11-03": {"dishes": [{"t": "veg", "n": "Pasta pesto med caponata, mozzarella och ruccola"}, {"t": "fisk", "n": "Örthalstrad kungsfiskfilé med hummerfond, parmesankrossad potatis och hyvlad zucchini"}, {"t": "kott", "n": "Raggmunk med stekt fläsk och rårörda lingon"}], "extra": "Flera sallader varje dag"}, "2026-11-04": {"dishes": [{"t": "veg", "n": "Parmesanstekt aubergine med tomatsås och risotto"}, {"t": "fisk", "n": "Parmesanstekt kummelfilé med tomatsås och risotto"}, {"t": "kott", "n": "Kalvfärsbiff med svampsås, pressgurka, gelé och potatispuré"}], "extra": "Flera sallader varje dag"}, "2026-11-05": {"dishes": [{"t": "veg", "n": "Blomkålsfritters med chipotledressing och rostad potatis"}, {"t": "fisk", "n": "Krämig fiskgryta med vitvinssås, tomat, selleri och saffransaioli"}, {"t": "kott", "n": "Bacon- och cheeseburgare med chipotledressing och klyftpotatis"}], "extra": "Flera sallader varje dag"}, "2026-11-06": {"dishes": [{"t": "veg", "n": "Vegetarisk ramen"}, {"t": "fisk", "n": "Senapsstekt strömming med brynt smör, örter och potatispuré"}, {"t": "kott", "n": "Fläskschnitzel med hollandaise, pommes och tomatsallad"}], "extra": "Flera sallader varje dag"}}}, "kitchenclub": {"status": "ok", "days": {"2026-11-05": {"dishes": [{"t": "veg", "n": "Asiatisk currysoppa med gyoza, kokos, pannkakor, sylt och vaniljvisp"}, {"t": "fisk", "n": "Citron- och salviabakad lax med örtsås och rostad fänkål"}, {"t": "kott", "n": "Svampfylld kyckling med peppargräddsås"}], "extra": "Dagens tips: laxen"}}}}}</script>
@@ -165,16 +172,56 @@ footer{max-width:1180px;margin:0 auto;padding:0 20px 36px;color:var(--muted);fon
 "use strict";
 const OFFICE={lat:59.37132,lon:18.01724};
 const PLACES=[
- {id:"bredbar",name:"Bredbar",short:"Bredbar",addr:"Gustav III:s boulevard 42",walk:3,lat:59.37295,lon:18.01658,price:"139 kr",priceNote:"take away 129 kr",open:[10,30,14,0],src:"https://bredbarsolna.se/dagens-lunch-frosunda/",srcName:"bredbarsolna.se"},
- {id:"matronan",name:"Matronan",short:"Matronan",addr:"Gustav III:s boulevard 52",walk:5,lat:59.37411,lon:18.01548,price:"125–139 kr",priceNote:"veg 125 · kött 129 · fisk 139",open:[10,30,13,30],src:"https://www.matronan.se/",srcName:"matronan.se"},
- {id:"bramat",name:"Bra Mat No 8",short:"Bra Mat",addr:"Rosenborgsgatan 4",walk:8,lat:59.37567,lon:18.01359,price:"135 kr",priceNote:"kaffe och gottis ingår",open:[10,30,13,30],src:"https://lunchmap.se/restaurant/27c23c87-a344-4635-95a1-c63e2cb34f2e",srcName:"LunchMap"},
- {id:"greven",name:"Greven & Betjänten",short:"Greven",addr:"Gårdsvägen 14",walk:9,lat:59.36767,lon:18.01077,price:"135 kr",priceNote:"alla rätter",open:[10,45,13,30],src:"https://xn--grevenochbetjnten-2qb.se/lunchmeny/",srcName:"grevenochbetjänten.se"},
- {id:"kitchenclub",name:"The Kitchen Club",short:"Kitchen Club",addr:"Gustav III:s boulevard 132",walk:9,lat:59.37330,lon:18.00768,price:"145 kr",priceNote:"alla rätter",open:[11,0,13,30],src:"https://app.kanpla.dk/app/s/JoQf98Sr0s2HtmzuVQre/m/5gkWaa5RkwOX7nSLmwMD",srcName:"TKC Solna (Kanpla)"},
- {id:"lillaangel",name:"Lilla Ängel",short:"Lilla Ängel",addr:"Rosenborgsgatan 1",walk:8,lat:59.37549,lon:18.01287,price:"135 kr",priceNote:"bröd, sallad och kaffe ingår",open:[11,0,14,30],src:"https://www.lillaangel.com/frosunda/lunch/",srcName:"lillaangel.com"}
+ {id:"bredbar",name:"Bredbar",short:"Bredbar",addr:"Gustav III:s boulevard 42",walk:3,lat:59.37295,lon:18.01658,price:"139 kr",priceNote:"take away 129 kr",priceNoteEn:"takeaway 129 kr",open:[10,30,14,0],src:"https://bredbarsolna.se/dagens-lunch-frosunda/",srcName:"bredbarsolna.se"},
+ {id:"matronan",name:"Matronan",short:"Matronan",addr:"Gustav III:s boulevard 52",walk:5,lat:59.37411,lon:18.01548,price:"125–139 kr",priceNote:"veg 125 · kött 129 · fisk 139",priceNoteEn:"veg 125 · meat 129 · fish 139",open:[10,30,13,30],src:"https://www.matronan.se/",srcName:"matronan.se",label:{side:"right",dy:0}},
+ {id:"bramat",name:"Bra Mat No 8",short:"Bra Mat",addr:"Rosenborgsgatan 4",walk:8,lat:59.37567,lon:18.01359,price:"135 kr",priceNote:"kaffe och gottis ingår",priceNoteEn:"coffee and a sweet treat included",open:[10,30,13,30],src:"https://lunchmap.se/restaurant/27c23c87-a344-4635-95a1-c63e2cb34f2e",srcName:"LunchMap",label:{side:"right",dy:-9}},
+ {id:"greven",name:"Greven & Betjänten",short:"Greven",addr:"Gårdsvägen 14",walk:9,lat:59.36767,lon:18.01077,price:"135 kr",priceNote:"alla rätter",priceNoteEn:"all dishes",open:[10,45,13,30],src:"https://xn--grevenochbetjnten-2qb.se/lunchmeny/",srcName:"grevenochbetjänten.se"},
+ {id:"kitchenclub",name:"The Kitchen Club",short:"Kitchen Club",addr:"Gustav III:s boulevard 132",walk:9,lat:59.37330,lon:18.00768,price:"145 kr",priceNote:"alla rätter",priceNoteEn:"all dishes",open:[11,0,13,30],src:"https://app.kanpla.dk/app/s/JoQf98Sr0s2HtmzuVQre/m/5gkWaa5RkwOX7nSLmwMD",srcName:"TKC Solna (Kanpla)"},
+ {id:"lillaangel",name:"Lilla Ängel",short:"Lilla Ängel",addr:"Rosenborgsgatan 1",walk:8,lat:59.37549,lon:18.01287,price:"135 kr",priceNote:"bröd, sallad och kaffe ingår",priceNoteEn:"bread, salad and coffee included",open:[11,0,14,30],src:"https://www.lillaangel.com/frosunda/lunch/",srcName:"lillaangel.com",label:{side:"left",dy:-4}}
 ];
-const TYPES={kott:"Kött",fisk:"Fisk",veg:"Veg",soppa:"Soppa",ovrigt:"Annat"};
-const DAYS=["söndag","måndag","tisdag","onsdag","torsdag","fredag","lördag"];
-const MONTHS=["januari","februari","mars","april","maj","juni","juli","augusti","september","oktober","november","december"];
+const I18N={
+ sv:{types:{kott:"Kött",fisk:"Fisk",veg:"Veg",soppa:"Soppa",ovrigt:"Annat"},
+  days:["söndag","måndag","tisdag","onsdag","torsdag","fredag","lördag"],
+  months:["januari","februari","mars","april","maj","juni","juli","augusti","september","oktober","november","december"],
+  tagline:"Dagens lunch inom tio minuters promenad från Gustav III:s boulevard 32. Menyerna hämtas automatiskt varje vardag.",
+  hunger:"Hungersensor",radarCap:"Kontoret i mitten · norr uppåt",all:"Alla",kott:"Kött",fisk:"Fisk",vegLong:"Vegetariskt",
+  spin:"Kan inte bestämma mig",disclaimer:"Gångtiderna är ungefärliga. Priser och rätter kan ändras, kolla gärna på plats.",
+  today:"I dag, ",week:"vecka",
+  hWeekend:"Helgläge. Sensorn är avstängd till måndag.",hEarly:"Frukostläge. Sensorn har knappt vaknat.",
+  hRising:(h,m)=>"Larmnivå nås om "+(h?h+" h ":"")+m+" min (11.30).",hAlarm:"Larm! Ta med en kollega och gå.",hFull:"Mätt. Sensorn kalibreras om till i morgon.",
+  weekend:"Helg! Radarn vilar. Här visas måndagens meny så fort den finns.",
+  pancakes:"Pannkakor",peasoup:"Ärtsoppa",fixedMenu:"Fast lunchmeny",lunchNow:"Lunch nu",lunchFrom:"Lunch från ",lunchOver:"Lunchen slut",
+  soon:"Dagens meny hämtas strax före åtta.",none:"Ingen meny publicerad för den här dagen än.",
+  walkTitle:"Ungefärlig gångtid från kontoret",source:"Källa: ",lunch:"Lunch ",
+  fallback:"Kunde inte läsa senaste menyfilen, så sidan visar en sparad version.",
+  missing:n=>n+" ställe"+(n>1?"n":"")+" har inte lagt ut dagens meny än.",
+  updated:f=>"Menyerna hämtades senast "+f+".",locale:"sv-SE",
+  noHit:"Radarn hittar inget",noHitTxt:"Inga rätter matchar filtret i dag.",scanning:"Skannar…",suggests:"Radarn föreslår",away:" min bort · ",
+  noEn:"",radarAria:"Radar som visar lunchställena runt kontoret, norr uppåt"},
+ en:{types:{kott:"Meat",fisk:"Fish",veg:"Veg",soppa:"Soup",ovrigt:"Other"},
+  days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+  months:["January","February","March","April","May","June","July","August","September","October","November","December"],
+  tagline:"Today's lunch within a ten-minute walk of Gustav III:s boulevard 32. Menus are fetched automatically every weekday and translated from Swedish.",
+  hunger:"Hunger sensor",radarCap:"Office in the centre · north up",all:"All",kott:"Meat",fisk:"Fish",vegLong:"Vegetarian",
+  spin:"I can't decide",disclaimer:"Walking times are approximate. Prices and dishes may change, so check on site. English menus are machine-translated.",
+  today:"Today, ",week:"week",
+  hWeekend:"Weekend mode. The sensor is off until Monday.",hEarly:"Breakfast mode. The sensor is barely awake.",
+  hRising:(h,m)=>"Alarm level in "+(h?h+" h ":"")+m+" min (11:30).",hAlarm:"Alarm! Grab a colleague and go.",hFull:"Full. The sensor recalibrates for tomorrow.",
+  weekend:"Weekend! The radar is resting. Monday's menu appears here as soon as it is out.",
+  pancakes:"Pancakes",peasoup:"Pea soup",fixedMenu:"Fixed lunch menu",lunchNow:"Serving now",lunchFrom:"Lunch from ",lunchOver:"Lunch is over",
+  soon:"Today's menu is fetched just before eight.",none:"No menu published for this day yet.",
+  walkTitle:"Approximate walking time from the office",source:"Source: ",lunch:"Lunch ",
+  fallback:"Could not load the latest menu file, so the page shows a saved version.",
+  missing:n=>n+" restaurant"+(n>1?"s have":" has")+" not posted today's menu yet.",
+  updated:f=>"Menus last fetched "+f+".",locale:"en-GB",
+  noHit:"Nothing on the radar",noHitTxt:"No dishes match the filter today.",scanning:"Scanning…",suggests:"The radar suggests",away:" min away · ",
+  noEn:"Swedish only – translation coming",radarAria:"Radar showing the lunch places around the office, north up"}
+};
+function langFromUrl(){try{const q=new URLSearchParams(location.search).get("lang");if(q==="en"||q==="sv")return q}catch(e){}return null}
+let LANG=langFromUrl();
+if(!LANG){try{LANG=localStorage.getItem("lr-lang")}catch(e){}}
+if(LANG!=="en")LANG="sv";
+const L=()=>I18N[LANG];
 
 function sthlm(){
   const p=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Stockholm",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23",weekday:"short"}).formatToParts(new Date());
@@ -192,26 +239,30 @@ function hhmm(h,m){return String(h).padStart(2,"0")+"."+String(m).padStart(2,"0"
 const now=sthlm();
 let show={y:now.y,m:now.m,d:now.d,dow:now.dow};
 let weekendNote="";
-if(now.dow===6||now.dow===0){show=addDays(now.y,now.m,now.d,now.dow===6?2:1);weekendNote="Helg! Radarn vilar. Här visas måndagens meny så fort den finns."}
+if(now.dow===6||now.dow===0){show=addDays(now.y,now.m,now.d,now.dow===6?2:1);weekendNote="weekend"}
 const showIso=iso(show.y,show.m,show.d);
 const isToday=showIso===iso(now.y,now.m,now.d);
 
-document.getElementById("dateline").textContent=
-  (isToday?"I dag, ":"")+DAYS[show.dow][0].toUpperCase()+DAYS[show.dow].slice(1)+" "+show.d+" "+MONTHS[show.m-1]+" · vecka "+isoWeek(show.y,show.m,show.d);
+function setDateline(){
+  const T=L(),dn=T.days[show.dow];
+  document.getElementById("dateline").textContent=
+    (isToday?T.today:"")+(isToday?dn:dn[0].toUpperCase()+dn.slice(1))+" "+show.d+" "+T.months[show.m-1]+" · "+T.week+" "+isoWeek(show.y,show.m,show.d);
+}
 
 // Hungersensor
-(function(){
+function hunger(){
+  const T=L();
   const mins=now.h*60+now.min, start=8*60, peak=11*60+30, end=13*60+30;
   let pct,msg;
-  if(!isToday){pct=12;msg="Helgläge. Sensorn är avstängd till måndag."}
-  else if(mins<start){pct=5;msg="Frukostläge. Sensorn har knappt vaknat."}
-  else if(mins<peak){pct=Math.round(10+85*(mins-start)/(peak-start));const left=peak-mins;msg="Larmnivå nås om "+(left>=60?Math.floor(left/60)+" h ":"")+(left%60)+" min (11.30).";}
-  else if(mins<=end){pct=100;msg="Larm! Ta med en kollega och gå.";}
-  else {pct=8;msg="Mätt. Sensorn kalibreras om till i morgon.";}
+  if(!isToday){pct=12;msg=T.hWeekend}
+  else if(mins<start){pct=5;msg=T.hEarly}
+  else if(mins<peak){pct=Math.round(10+85*(mins-start)/(peak-start));const left=peak-mins;msg=T.hRising(Math.floor(left/60),left%60);}
+  else if(mins<=end){pct=100;msg=T.hAlarm;}
+  else {pct=8;msg=T.hFull;}
   document.getElementById("hungerVal").textContent=pct+" %";
   requestAnimationFrame(()=>{document.getElementById("hungerBar").style.width=pct+"%"});
   document.getElementById("hungerMsg").textContent=msg;
-})();
+}
 
 let DATA=null, filter="alla";
 function todays(p){
@@ -219,18 +270,26 @@ function todays(p){
   const r=DATA&&DATA.restaurants&&DATA.restaurants[p.id];
   const day=r&&r.days&&r.days[showIso];
   if(!day||!day.dishes||!day.dishes.length) return {dishes:[],extra:null,fixed:false};
-  return {dishes:day.dishes,extra:day.extra||null,fixed:false};
+  return {dishes:day.dishes,extra:day.extra||null,extraEn:day.extra_en||null,fixed:false};
 }
 function openState(p){
   if(!isToday||now.dow===0||now.dow===6) return null;
   const mins=now.h*60+now.min, a=p.open[0]*60+p.open[1], b=p.open[2]*60+p.open[3];
-  if(mins>=a&&mins<b) return {cls:"open",txt:"Lunch nu"};
-  if(mins<a) return {cls:"",txt:"Lunch från "+hhmm(p.open[0],p.open[1])};
-  return {cls:"",txt:"Lunchen slut"};
+  const T=L();
+  if(mins>=a&&mins<b) return {cls:"open",txt:T.lunchNow};
+  if(mins<a) return {cls:"",txt:T.lunchFrom+hhmm(p.open[0],p.open[1])};
+  return {cls:"",txt:T.lunchOver};
 }
 const WALK_ICON='<svg viewBox="0 0 13 15" aria-hidden="true"><circle cx="7.5" cy="1.8" r="1.8"/><path d="M5.2 4.6l2.6.3 1.4 2.4 2.3.9-.4 1-2.8-1-.7-1.1-.6 2.6 2 2.1.8 3.2-1.1.3-.8-2.9-2.3-2-1 3.3-2.8 1.6-.6-1 2.4-1.4 1.6-5.3-1 .6-.6 2-1.1-.3.8-2.6z"/></svg>';
 
+function dishName(x){return LANG==="en"&&x.en?x.en:x.n}
+function dishHtml(x){
+  if(LANG!=="en") return esc(x.n);
+  if(x.en) return '<span lang="en">'+esc(x.en)+'</span>';
+  return '<span lang="sv">'+esc(x.n)+'</span> <small class="noen">('+esc(L().noEn)+')</small>';
+}
 function render(){
+  const T=L();
   const grid=document.getElementById("grid");
   grid.innerHTML="";
   PLACES.forEach(p=>{
@@ -238,37 +297,37 @@ function render(){
     const c=document.createElement("article");
     c.className="card"; c.id="card-"+p.id;
     const allText=t.dishes.map(x=>x.n).join(" ")+" "+(t.extra||"");
-    const fun=/pannkak/i.test(allText)?'<span class="pill fun">Pannkakor</span>':(/ärtsoppa/i.test(allText)?'<span class="pill fun">Ärtsoppa</span>':"");
+    const fun=/pannkak/i.test(allText)?'<span class="pill fun">'+T.pancakes+'</span>':(/ärtsoppa/i.test(allText)?'<span class="pill fun">'+T.peasoup+'</span>':"");
     let body;
     if(t.dishes.length){
       body='<ul class="dishes">'+t.dishes.map(x=>{
-        const tt=TYPES[x.t]?x.t:"ovrigt";
+        const tt=T.types[x.t]?x.t:"ovrigt";
         const dim=(filter!=="alla"&&tt!==filter)?' class="dim"':"";
-        return '<li'+dim+' style="--c:var(--'+tt+')"><span class="t">'+TYPES[tt]+'</span><span>'+esc(x.n)+'</span></li>';
+        return '<li'+dim+' style="--c:var(--'+tt+')"><span class="t">'+T.types[tt]+'</span><span>'+dishHtml(x)+'</span></li>';
       }).join("")+"</ul>";
-      if(t.extra) body+='<p class="extra">'+esc(t.extra)+'</p>';
+      if(t.extra) body+='<p class="extra">'+esc(LANG==="en"&&t.extraEn?t.extraEn:t.extra)+'</p>';
     } else {
-      body='<p class="empty">'+(isToday&&now.h<8?"Dagens meny hämtas strax före åtta.":"Ingen meny publicerad för den här dagen än.")+'</p>';
+      body='<p class="empty">'+(isToday&&now.h<8?T.soon:T.none)+'</p>';
     }
     c.innerHTML=
-      '<div class="card-head"><h2>'+esc(p.name)+'</h2><span class="walk" title="Ungefärlig gångtid från kontoret">'+WALK_ICON+p.walk+' min</span>'+
-      '<div class="meta"><span><b>'+esc(p.price)+'</b> · '+esc(p.priceNote)+'</span><span>'+esc(p.addr)+'</span>'+
-      (st?'<span class="pill '+st.cls+'">'+st.txt+'</span>':'')+(t.fixed?'<span class="pill fixed">Fast lunchmeny</span>':'')+fun+'</div></div>'+
+      '<div class="card-head"><h2>'+esc(p.name)+'</h2><span class="walk" title="'+esc(T.walkTitle)+'">'+WALK_ICON+p.walk+' min</span>'+
+      '<div class="meta"><span><b>'+esc(p.price)+'</b> · '+esc(LANG==="en"&&p.priceNoteEn?p.priceNoteEn:p.priceNote)+'</span><span>'+esc(p.addr)+'</span>'+
+      (st?'<span class="pill '+st.cls+'">'+st.txt+'</span>':'')+(t.fixed?'<span class="pill fixed">'+T.fixedMenu+'</span>':'')+fun+'</div></div>'+
       body+
-      '<div class="src"><span>'+(p.src?'Källa: <a href="'+p.src+'" target="_blank" rel="noopener">'+esc(p.srcName)+'</a>':esc(p.srcName))+'</span><span>Lunch '+hhmm(p.open[0],p.open[1])+'–'+hhmm(p.open[2],p.open[3])+'</span></div>';
+      '<div class="src"><span>'+(p.src?T.source+'<a href="'+p.src+'" target="_blank" rel="noopener">'+esc(p.srcName)+'</a>':esc(p.srcName))+'</span><span>'+T.lunch+hhmm(p.open[0],p.open[1])+'–'+hhmm(p.open[2],p.open[3])+'</span></div>';
     grid.appendChild(c);
   });
   const missing=PLACES.filter(p=>!p.fixed&&!todays(p).dishes.length).length;
   const n=document.getElementById("notice");
   const msgs=[];
-  if(weekendNote) msgs.push(weekendNote);
-  if(DATA&&DATA._fromFallback) msgs.push("Kunde inte läsa senaste menyfilen, så sidan visar en sparad version.");
-  if(missing&&isToday&&now.h>=8&&!weekendNote) msgs.push(missing+" ställe"+(missing>1?"n":"")+" har inte lagt ut dagens meny än.");
+  if(weekendNote) msgs.push(T.weekend);
+  if(DATA&&DATA._fromFallback) msgs.push(T.fallback);
+  if(missing&&isToday&&now.h>=8&&!weekendNote) msgs.push(T.missing(missing));
   n.hidden=!msgs.length; n.textContent=msgs.join(" ");
   if(DATA&&DATA.updated){
     const u=new Date(DATA.updated);
-    const f=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Stockholm",weekday:"long",day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"}).format(u);
-    document.getElementById("updated").textContent="Menyerna hämtades senast "+f+".";
+    const f=new Intl.DateTimeFormat(T.locale,{timeZone:"Europe/Stockholm",weekday:"long",day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"}).format(u);
+    document.getElementById("updated").textContent=T.updated(f);
   }
 }
 
@@ -278,25 +337,43 @@ document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
   render();
 }));
 
+// Språk
+function applyLang(){
+  const T=L();
+  document.documentElement.lang=LANG;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{const v=T[el.dataset.i18n];if(typeof v==="string")el.textContent=v});
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.l===LANG)));
+  document.getElementById("radar").setAttribute("aria-label",T.radarAria);
+  document.getElementById("pick").classList.remove("show");
+  setDateline();hunger();render();
+}
+document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>{
+  LANG=b.dataset.l;
+  try{localStorage.setItem("lr-lang",LANG)}catch(e){}
+  try{const u=new URL(location.href);if(LANG==="en")u.searchParams.set("lang","en");else u.searchParams.delete("lang");history.replaceState(null,"",u)}catch(e){}
+  applyLang();
+}));
+
 // Slumpa
 document.getElementById("spin").addEventListener("click",()=>{
   const pool=[];
   PLACES.forEach(p=>todays(p).dishes.forEach(x=>{if(filter==="alla"||x.t===filter) pool.push({p,x})}));
   const pick=document.getElementById("pick");
   pick.classList.add("show");
-  if(!pool.length){document.getElementById("pickLbl").textContent="Radarn hittar inget";document.getElementById("pickDish").textContent="Inga rätter matchar filtret i dag.";document.getElementById("pickWhere").textContent="";return}
+  const T=L();
+  if(!pool.length){document.getElementById("pickLbl").textContent=T.noHit;document.getElementById("pickDish").textContent=T.noHitTxt;document.getElementById("pickWhere").textContent="";return}
   const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const final=pool[Math.floor(Math.random()*pool.length)];
   document.querySelectorAll(".card.hit").forEach(c=>c.classList.remove("hit"));
-  document.getElementById("pickLbl").textContent="Skannar…";
+  document.getElementById("pickLbl").textContent=T.scanning;
   let i=0, steps=reduce?0:14;
   const tick=()=>{
     const it=i<steps?pool[Math.floor(Math.random()*pool.length)]:final;
-    document.getElementById("pickDish").textContent=it.x.n;
-    document.getElementById("pickWhere").textContent=it.p.name+" · "+it.p.walk+" min bort · "+it.p.price;
+    document.getElementById("pickDish").textContent=dishName(it.x);
+    document.getElementById("pickWhere").textContent=it.p.name+" · "+it.p.walk+T.away+it.p.price;
     if(i<steps){i++;setTimeout(tick,50+i*12)}
     else{
-      document.getElementById("pickLbl").textContent="Radarn föreslår";
+      document.getElementById("pickLbl").textContent=T.suggests;
       const card=document.getElementById("card-"+final.p.id);
       if(card) card.classList.add("hit");
       highlight=final.p.id;
@@ -336,9 +413,10 @@ function drawRadar(sweep){
     ctx.fillStyle=hot?"#ffffff":"rgba(229,43,31,"+glow+")";
     ctx.beginPath();ctx.arc(o.x,o.y,hot?10:7,0,Math.PI*2);ctx.fill();
     ctx.fillStyle="rgba(247,247,247,"+(hot?1:Math.min(1,glow+0.2))+")";
-    const left=o.x<C-2&&(o.x-ctx.measureText(o.p.short).width-16)>0;
+    const lb=o.p.label||{};
+    const left=lb.side?lb.side==="left":(o.x<C-2&&(o.x-ctx.measureText(o.p.short).width-16)>0);
     ctx.textAlign=left?"right":"left";
-    ctx.fillText(o.p.short,o.x+(left?-12:12),o.y);
+    ctx.fillText(o.p.short,o.x+(left?-12:12),o.y+(lb.dy||0));
   });
   ctx.fillStyle="#fff";ctx.beginPath();ctx.arc(C,C,8,0,Math.PI*2);ctx.fill();
   ctx.fillStyle="#E52B1F";ctx.beginPath();ctx.arc(C,C,4,0,Math.PI*2);ctx.fill();
@@ -352,7 +430,8 @@ else{const t0=performance.now();(function loop(t){drawRadar(((t-t0)/2600)%1*Math
 function useData(d,fb){DATA=d;if(fb)DATA._fromFallback=true;render()}
 let fallback=null;
 try{fallback=JSON.parse(document.getElementById("fallback").textContent)}catch(e){}
-useData(fallback||{restaurants:{}},false);
+DATA=fallback||{restaurants:{}};
+applyLang();
 fetch("menus.json?v="+Date.now(),{cache:"no-store"})
   .then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
   .then(d=>useData(d,false))
