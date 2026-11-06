@@ -21,13 +21,14 @@ SOURCES = {
     "bramat": "https://lunchmap.se/restaurant/27c23c87-a344-4635-95a1-c63e2cb34f2e",
     "greven": "https://xn--grevenochbetjnten-2qb.se/lunchmeny/",
     "kitchenclub": "https://app.kanpla.dk/app/s/JoQf98Sr0s2HtmzuVQre/m/5gkWaa5RkwOX7nSLmwMD",
+    "lillaangel": "https://www.lillaangel.com/frosunda/lunch/",
 }
 DAYS = ["måndag", "tisdag", "onsdag", "torsdag", "fredag"]
 MONTHS = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti",
           "september", "oktober", "november", "december"]
 
 # ---------- klassning ----------
-FISH = r"fisk|lax|torsk|kolja|sej|kummel|flundra|rödspätta|strömming|räk|kräft|skaldjur|tonfisk|bouillabaisse|fish|mussl|sill|gös|abborre|kungsfisk|havets|hälleflundra|röding|tilapia|pangasius|scampi|bläckfisk|krabba|hummer"
+FISH = r"fisk|lax|spätta|torsk|kolja|sej|kummel|flundra|rödspätta|strömming|räk|kräft|skaldjur|tonfisk|bouillabaisse|fish|mussl|sill|gös|abborre|kungsfisk|havets|hälleflundra|röding|tilapia|pangasius|scampi|bläckfisk|krabba|hummer"
 MEAT = r"kyckling|fläsk|bacon|biff|kalv|oxe|\bnöt|pork|chicken|schnitzel|köttbull|korv|lamm|skinka|wallenbergare|färs|burgare|entrecote|tritip|beef|karré|pulled|kött|anka|kalkon|yakiniku|pljeskavica|bourguignon|carbonara|kebab|chorizo|salsiccia|högrev|fläskfilé|grillad"
 VEG = r"vegetari|vegan|växtbaser|halloumi|falafel|chèvre|chevre|quorn|tofu|paneer|svamp|bönor|linser|kikärt|ramen|fritters|grönsak|aubergin|pesto|fetaost"
 
@@ -223,8 +224,48 @@ def parse_kanpla(text, today):
     return {"days": {today.isoformat(): out}}
 
 
+def parse_lillaangel(text, today):
+    L = [l for l in lines_of(text) if l and not re.fullmatch(r"\d", l)]
+    wk = None
+    for l in L:
+        m = re.search(r"lunchmeny\s*-\s*vecka\s+(\d+)", l, re.I)
+        if m:
+            wk = int(m.group(1)); break
+    if wk != today.isocalendar()[1]:
+        raise ValueError(f"fel vecka på sidan (v. {wk})")
+    dates = dict(zip(DAYS, week_dates(today)))
+
+    def dish(name, desc):
+        d = re.sub(r"^serveras\s+", "", desc, flags=re.I).rstrip(".")
+        return tidy(name + (" " + d if d.lower().startswith("med ") else (" med " + d if d else "")))
+
+    days, veg, cur, sect, i = {}, [], None, None, 0
+    while i < len(L):
+        l = L[i]; low = l.lower()
+        if low.startswith("alltid på lilla"):
+            break
+        if low in DAYS:
+            cur = dates[low].isoformat(); days[cur] = {"dishes": []}; sect = "day"; i += 1; continue
+        if low.startswith("veckans vegetariska"):
+            sect = "veg"; i += 1; continue
+        if sect and i + 1 < len(L) and L[i + 1].lower().startswith("serveras"):
+            txt = dish(l, L[i + 1])
+            if sect == "veg":
+                veg.append({"t": "veg", "n": txt})
+            elif cur:
+                days[cur]["dishes"].append({"t": classify(txt), "n": txt})
+            i += 2; continue
+        i += 1
+    for d in days.values():
+        d["dishes"] += veg
+    days = {k: v for k, v in days.items() if v["dishes"]}
+    if not days:
+        raise ValueError("hittade inga rätter")
+    return {"days": days}
+
+
 PARSERS = {"bredbar": parse_bredbar, "matronan": parse_matronan, "bramat": parse_bramat,
-           "greven": parse_greven, "kitchenclub": parse_kanpla}
+           "greven": parse_greven, "kitchenclub": parse_kanpla, "lillaangel": parse_lillaangel}
 DAILY = {"bredbar", "kitchenclub"}
 
 
