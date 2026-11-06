@@ -300,7 +300,9 @@ function render(){
     const fun=/pannkak/i.test(allText)?'<span class="pill fun">'+T.pancakes+'</span>':(/ärtsoppa/i.test(allText)?'<span class="pill fun">'+T.peasoup+'</span>':"");
     let body;
     if(t.dishes.length){
-      body='<ul class="dishes">'+t.dishes.map(x=>{
+      const ORDER={kott:0,fisk:1,veg:2,soppa:3,ovrigt:4};
+      const sorted=t.dishes.map((x,i)=>({x,i})).sort((a,b)=>((ORDER[a.x.t]??4)-(ORDER[b.x.t]??4))||(a.i-b.i)).map(o=>o.x);
+      body='<ul class="dishes">'+sorted.map(x=>{
         const tt=T.types[x.t]?x.t:"ovrigt";
         const dim=(filter!=="alla"&&tt!==filter)?' class="dim"':"";
         return '<li'+dim+' style="--c:var(--'+tt+')"><span class="t">'+T.types[tt]+'</span><span>'+dishHtml(x)+'</span></li>';
