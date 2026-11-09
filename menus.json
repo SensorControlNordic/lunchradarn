@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T10:09:18+01:00",
+ "updated": "2026-11-09T10:46:28+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -149,9 +149,114 @@
    }
   },
   "bramat": {
-   "status": "fel",
-   "note": "fel vecka på sidan (v. 45)",
-   "days": {}
+   "status": "ok",
+   "days": {
+    "2026-11-09": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Högrevsgryta med rostad vitlök, tomat och rött vin serveras med rostad potatis",
+       "en": "Beef chuck stew with roasted garlic, tomato and red wine, served with roasted potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Saffransdoftande fiskgryta med handskalade räkor, aioli och krutonger",
+       "en": "Saffron-scented fish stew with hand-peeled shrimp, aioli and croutons"
+      },
+      {
+       "t": "veg",
+       "n": "Spenat- och riccottafylld tortillini, gräddig tomatsås, garna padano och ruccola",
+       "en": "Spinach and ricotta-filled tortellini, creamy tomato sauce, grana padano and arugula"
+      }
+     ],
+     "extra": "Vi bjuder på gottis till kaffet",
+     "extra_en": "We treat you to sweets with your coffee"
+    },
+    "2026-11-10": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Marockanska gryta med kyckling, saffran, tomat och kikärtor serveras med basmatiris och fetaostkräm",
+       "en": "Moroccan stew with chicken, saffron, tomato and chickpeas, served with basmati rice and feta cream"
+      },
+      {
+       "t": "fisk",
+       "n": "Panerad fisk med tartarsås och kokt potatis",
+       "en": "Breaded fish with tartar sauce and boiled potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Fritters med majs, zuccini och kidneybönor serveras med örtktäm",
+       "en": "Fritters with corn, zucchini and kidney beans, served with herb crème fraîche"
+      }
+     ],
+     "extra": "Vi bjuder på gottis till kaffet",
+     "extra_en": "We treat you to sweets with your coffee"
+    },
+    "2026-11-11": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Pjleskavica med ajvar, hackad rödlök, gräddfil och rostad potatis",
+       "en": "Pljeskavica (Balkan grilled meat patty) with ajvar, chopped red onion, sour cream and roasted potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Saffransdoftande fiskgryta med handskalade räkor, aioli och krutonger",
+       "en": "Saffron-scented fish stew with hand-peeled shrimp, aioli and croutons"
+      },
+      {
+       "t": "veg",
+       "n": "Indisk lins- och halloumigryta serveras med basmatiris",
+       "en": "Indian lentil and halloumi stew, served with basmati rice"
+      }
+     ],
+     "extra": "Vi bjuder på gottis till kaffet",
+     "extra_en": "We treat you to sweets with your coffee"
+    },
+    "2026-11-12": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Pulled pork med coleslaw, basmatiris och nachochips",
+       "en": "Pulled pork with coleslaw, basmati rice and nacho chips"
+      },
+      {
+       "t": "fisk",
+       "n": "Havets wallenbergare med vitvinssås och kokt potatis",
+       "en": "Seafood wallenbergare (fish patty) with white wine sauce and boiled potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Ugnsbakad rotselleri, brynt nötsnmör, semitorkade tomater och couscoussallad",
+       "en": "Oven-baked celeriac, browned nut butter, semi-dried tomatoes and couscous salad"
+      }
+     ],
+     "extra": "Vi bjuder på pannkakor med tillbehör",
+     "extra_en": "We treat you to pancakes with toppings"
+    },
+    "2026-11-13": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Nattbakad kalvtritip med chilibearnaise, rödvinssås och rostad potatis",
+       "en": "Overnight-baked veal tri-tip with chili bearnaise, red wine sauce and roasted potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Pasta med kräftstjärtar, vitt vin, grädde och babyspenat toppas med grana padano",
+       "en": "Pasta with crayfish tails, white wine, cream and baby spinach, topped with grana padano"
+      },
+      {
+       "t": "veg",
+       "n": "Bowl- friterad avokado, bulgur, picklad rödkål, sojabönor och mango",
+       "en": "Bowl with fried avocado, bulgur, pickled red cabbage, soybeans and mango"
+      }
+     ],
+     "extra": "Fredagsgottis - Äppelpaj med vaniljsås",
+     "extra_en": "Friday treat: Apple pie with vanilla sauce"
+    }
+   }
   },
   "greven": {
    "status": "ok",
@@ -282,6 +387,11 @@
        "t": "kott",
        "n": "Kyckling steak med rödvinssås, bacon, champinjoner",
        "en": "Chicken steak with red wine sauce, bacon and mushrooms"
+      },
+      {
+       "t": "kott",
+       "n": "Kalvfärsbiff med rödvinssås, bacon, champinjoner",
+       "en": "Veal patty with red wine sauce, bacon and mushrooms"
       }
      ],
      "extra": "Dagens tips: havets Wallenbergare",
@@ -291,7 +401,7 @@
   },
   "lillaangel": {
    "status": "fel",
-   "note": "fel vecka på sidan (v. 45)",
+   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
    "days": {}
   }
  }
