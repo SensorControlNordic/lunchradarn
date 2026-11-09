@@ -24,7 +24,7 @@ TR_MODEL = os.environ.get("LR_MODEL") or "claude-sonnet-5-5"
 SOURCES = {
     "bredbar": "https://bredbarsolna.se/dagens-lunch-frosunda/",
     "matronan": "https://www.matronan.se/",
-    "bramat": "https://lunchmap.se/restaurant/27c23c87-a344-4635-95a1-c63e2cb34f2e",
+    "bramat": "https://www.bramat8.se/lunch",
     "greven": "https://xn--grevenochbetjnten-2qb.se/lunchmeny/",
     "kitchenclub": "https://app.kanpla.dk/app/s/JoQf98Sr0s2HtmzuVQre/m/5gkWaa5RkwOX7nSLmwMD",
     "lillaangel": "https://www.lillaangel.com/frosunda/lunch/",
@@ -109,9 +109,31 @@ def parse_matronan(text, today):
     return parse_weekly_by_dayname(text, today, r"^vecka\s+(\d+)", stop_re=r"^hela veckan")
 
 
+BRAMAT_WEEK = r"lunchmeny\s*v\.?\s*(\d+)"
+
+
 def parse_bramat(text, today):
-    return parse_weekly_by_dayname(text, today, r"lunchmeny v\.?\s*(\d+)",
-                                   extra_re=r"^(vi bjuder|fredagsgottis)", stop_re=r"^alltid på menyn")
+    # bramat8.se visar ofta både förra och denna veckas meny – läs bara denna veckas avsnitt.
+    L = lines_of(text)
+    wk = today.isocalendar()[1]
+    found, start = [], None
+    for i, l in enumerate(L):
+        m = re.search(BRAMAT_WEEK, l, re.I)
+        if m:
+            found.append(m.group(1))
+            if int(m.group(1)) == wk and start is None:
+                start = i
+    if start is None:
+        raise ValueError(f"fel vecka på sidan (v. {', '.join(found) or '?'})")
+    res = parse_weekly_by_dayname("\n".join(L[start:]), today, BRAMAT_WEEK,
+                                  extra_re=r"^(vi bjuder|fredagsgottis)",
+                                  stop_re=r"^(alltid på menyn|lunchmeny\s*v\.?\s*\d+)")
+    # Bra Mat har alltid kött, fisk, vegetariskt i den ordningen.
+    for d in res["days"].values():
+        ds = d["dishes"]
+        if len(ds) == 3 and ds[2]["t"] == "kott" and not re.search(MEAT, re.sub(r"nöts\w*mör", "", ds[2]["n"].lower())):
+            ds[2]["t"] = "veg"
+    return res
 
 
 def parse_greven(text, today):
