@@ -1,11 +1,52 @@
 {
- "updated": "2026-11-09T07:41:48+01:00",
+ "updated": "2026-11-09T08:26:46+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
-   "status": "fel",
-   "note": "hittade inga rätter",
-   "days": {}
+   "status": "ok",
+   "days": {
+    "2026-11-09": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Pljeskavica med ajvar, gräddfil, rödlök, rödvinsås och rösti potatis",
+       "en": "Pljeskavica (Balkan minced meat patty) with ajvar, sour cream, red onion, red wine sauce and rösti potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Biff stroganoff med basmatiris, gräddfil och saltgurka",
+       "en": "Beef stroganoff with basmati rice, sour cream and pickled cucumber"
+      },
+      {
+       "t": "kott",
+       "n": "Fläsknoisetter \"Black och White med bea, rödvinsås och råstekt potatis",
+       "en": "Pork noisettes \"Black and White\" with béarnaise, red wine sauce and pan-fried potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Pork noisettes \"Black och White\" served with béarnaise sauce, red wine sauce, and pan-fried potatoes",
+       "en": "Pork noisettes \"Black and White\" served with béarnaise sauce, red wine sauce and pan-fried potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt panerad spättafilé med västkuströra, citron och dillslungad potatis",
+       "en": "Pan-fried breaded plaice fillet with västkuströra (Swedish West Coast seafood salad), lemon and dill-tossed potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Pan-fried breaded plaice fillet with västkuströra, lemon, and dill-tossed potatoes",
+       "en": "Pan-fried breaded plaice fillet with västkuströra (Swedish West Coast seafood salad), lemon and dill-tossed potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Halloumi stroganoff med basmatiris",
+       "en": "Halloumi stroganoff with basmati rice"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145kr.",
+     "extra_en": "Extra today: TODAY BREDBAR TREATS YOU TO HOMEMADE SOFT COOKIES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate and more, 145 SEK."
+    }
+   }
   },
   "matronan": {
    "status": "ok",
