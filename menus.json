@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T10:46:28+01:00",
+ "updated": "2026-11-09T10:53:34+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -400,9 +400,124 @@
    }
   },
   "lillaangel": {
-   "status": "fel",
-   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
-   "days": {}
+   "status": "ok",
+   "days": {
+    "2026-11-09": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Köttbullar med potatispuré, rårörda lingon, pressgurka och gräddsås",
+       "en": "Köttbullar (Swedish meatballs) with mashed potatoes, lingonberry preserve, pressgurka (quick-pickled cucumber) and cream sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt lax med saffranssås, stekta grönsaker och potatis",
+       "en": "Fried salmon with saffron sauce, sautéed vegetables and potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris",
+       "en": "Vegetarian fillet stew with jasmine rice"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
+       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
+      }
+     ]
+    },
+    "2026-11-10": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Raggmunk med stekt fläsk och rårörda lingon",
+       "en": "Raggmunk (Swedish potato pancake) with fried pork and lingonberry preserve"
+      },
+      {
+       "t": "fisk",
+       "n": "Smörstekt fiskfilé med stekt potatis, stekta grönsaker och dillsås",
+       "en": "Butter-fried fish fillet with fried potatoes, sautéed vegetables and dill sauce"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris",
+       "en": "Vegetarian fillet stew with jasmine rice"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
+       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
+      }
+     ]
+    },
+    "2026-11-11": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Kycklingcurry med ris och grönsaker",
+       "en": "Chicken curry with rice and vegetables"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt lax med Sandefjordssås, kokt potatis, sparris och gräslök",
+       "en": "Fried salmon with Sandefjord sauce, boiled potatoes, asparagus and chives"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris",
+       "en": "Vegetarian fillet stew with jasmine rice"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
+       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
+      }
+     ]
+    },
+    "2026-11-12": {
+     "dishes": [
+      {
+       "t": "fisk",
+       "n": "Rimmad lax med stuvad potatis och dill",
+       "en": "Rimmad lax (salt-cured salmon) with stuvad potatis (potatoes in white sauce) and dill"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris",
+       "en": "Vegetarian fillet stew with jasmine rice"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
+       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
+      }
+     ]
+    },
+    "2026-11-13": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Entrecôte med stekt potatis och bearnaisesås",
+       "en": "Entrecôte with fried potatoes and bearnaise sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Friterad torsk med stekt potatis och spenatsås",
+       "en": "Deep-fried cod with fried potatoes and spinach sauce"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetarisk filégryta med jasminris",
+       "en": "Vegetarian fillet stew with jasmine rice"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
+       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
+      }
+     ]
+    }
+   }
   }
  }
 }
