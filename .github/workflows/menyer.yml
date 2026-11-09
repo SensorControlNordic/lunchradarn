@@ -1,14 +1,20 @@
 name: Dagens menyer
 
 # Hämtar lunchmenyerna och publicerar sidan på GitHub Pages.
-# Tiderna är UTC: 05.40, 06.10, 07.45 och 08.45 (06.40–09.45 svensk vintertid).
-# GitHub kan starta schemalagda körningar några minuter sent.
+# Körs vardagar 06.40, 07.10, 08.45 och 10.00 svensk tid – samma tider året runt.
+# GitHub räknar schemat i UTC, så varje tid finns två gånger (sommar- och vintertid);
+# jobbet "tid" släpper bara igenom den körning som motsvarar en av tiderna i Stockholm just då.
+# GitHub kan starta schemalagda körningar några minuter sent – det påverkar inte kontrollen.
 on:
   schedule:
-    - cron: "40 5 * * 1-5"
-    - cron: "10 6 * * 1-5"
-    - cron: "45 7 * * 1-5"
-    - cron: "45 8 * * 1-5"
+    - cron: "40 4 * * 1-5"   # 06.40 sommartid
+    - cron: "40 5 * * 1-5"   # 06.40 vintertid
+    - cron: "10 5 * * 1-5"   # 07.10 sommartid
+    - cron: "10 6 * * 1-5"   # 07.10 vintertid
+    - cron: "45 6 * * 1-5"   # 08.45 sommartid
+    - cron: "45 7 * * 1-5"   # 08.45 vintertid
+    - cron: "0 8 * * 1-5"    # 10.00 sommartid
+    - cron: "0 9 * * 1-5"    # 10.00 vintertid
   workflow_dispatch:
   push:
     branches: [main]
@@ -23,7 +29,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  tid:
+    runs-on: ubuntu-latest
+    outputs:
+      kor: ${{ steps.kontroll.outputs.kor }}
+    steps:
+      - id: kontroll
+        env:
+          SCHEMA: ${{ github.event.schedule }}
+        run: |
+          if [ -z "$SCHEMA" ]; then echo "kor=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          set -- $SCHEMA
+          lokal=$(TZ=Europe/Stockholm date -d "$(date -u +%F) $2:$1 UTC" +%H:%M)
+          case "$lokal" in
+            06:40|07:10|08:45|10:00) echo "kor=true" >> "$GITHUB_OUTPUT"; echo "Kör: $lokal svensk tid" ;;
+            *) echo "kor=false" >> "$GITHUB_OUTPUT"; echo "Hoppar över: $lokal svensk tid" ;;
+          esac
+
   update:
+    needs: tid
+    if: needs.tid.outputs.kor == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
