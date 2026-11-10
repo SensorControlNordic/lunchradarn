@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T21:18:43+01:00",
+ "updated": "2026-11-10T10:48:59+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -45,6 +45,37 @@
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145kr.",
      "extra_en": "Extra today: TODAY BREDBAR TREATS YOU TO HOMEMADE SOFT COOKIES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate and more, 145 SEK."
+    },
+    "2026-11-10": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Raggmunk och fläsk serveras med lingon - alternativt löksås och kokt potatis",
+       "en": "Raggmunk (Swedish potato pancake) and pork served with lingonberries, or onion sauce and boiled potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Persiljejärpar med gräddsås, lingon, pressgurka och mos",
+       "en": "Persiljejärpar (Swedish parsley patties) with cream sauce, lingonberries, pressed cucumber and mashed potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Stekt örtmarinerad kycklingfilé \"rödcurrysås\", cashewnötter och basmatiris",
+       "en": "Fried herb-marinated chicken fillet with \"red curry sauce\", cashew nuts and basmati rice"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt laxfilé med avokadocreme, citron och dillslungad potatis",
+       "en": "Fried salmon fillet with avocado cream, lemon and dill-tossed potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "* Halloumi raggmunk serveras med lingonkeso och mixsallad",
+       "en": "* Halloumi raggmunk (Swedish potato pancake) served with lingonberry cottage cheese and mixed salad"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
+     "extra_en": "Today's extra: TODAY WE'RE SERVING BREDBAR'S HOMEMADE SOFT CAKES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
     }
    }
   },
@@ -396,6 +427,32 @@
      ],
      "extra": "Dagens tips: havets Wallenbergare",
      "extra_en": "Today's tip: Wallenbergare (veal patty) of the sea"
+    },
+    "2026-11-10": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Linguine pasta med tomat, vitlök, ruccola, solrosfrön",
+       "en": "Linguine pasta with tomato, garlic, rocket and sunflower seeds"
+      },
+      {
+       "t": "kott",
+       "n": "Viltfärsbiff med kantarellsås, lingon",
+       "en": "Game mince patty with chanterelle sauce and lingonberries"
+      },
+      {
+       "t": "kott",
+       "n": "Stekt rimmat fläsk med löksås",
+       "en": "Fried salted pork with onion sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Havets Wallenbergare med dillsås",
+       "en": "Seafood Wallenbergare (Swedish patty) with dill sauce"
+      }
+     ],
+     "extra": "Dagens tips: viltfärsbiff",
+     "extra_en": "Today's tip: game mince patty"
     }
    }
   },
