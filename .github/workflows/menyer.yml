@@ -1,7 +1,8 @@
 name: Dagens menyer
 
 # Hämtar lunchmenyerna och publicerar sidan på GitHub Pages.
-# Körs vardagar 06.40, 07.10, 08.45, 10.00 och 11.00 svensk tid – samma tider året runt.
+# Körs vardagar 06.40, 07.10, 08.45, 09.57 och 10.57 svensk tid – samma tider året runt.
+# Tiderna ligger medvetet bort från hela timmar, då GitHubs schemakö är som längst.
 # GitHub räknar schemat i UTC, så varje tid finns två gånger (sommar- och vintertid);
 # jobbet "tid" släpper bara igenom den körning som motsvarar en av tiderna i Stockholm just då.
 # GitHub kan starta schemalagda körningar några minuter sent – det påverkar inte kontrollen.
@@ -13,9 +14,9 @@ on:
     - cron: "10 6 * * 1-5"   # 07.10 vintertid
     - cron: "45 6 * * 1-5"   # 08.45 sommartid
     - cron: "45 7 * * 1-5"   # 08.45 vintertid
-    - cron: "0 8 * * 1-5"    # 10.00 sommartid
-    - cron: "0 9 * * 1-5"    # 10.00 vintertid / 11.00 sommartid
-    - cron: "0 10 * * 1-5"   # 11.00 vintertid
+    - cron: "57 7 * * 1-5"   # 09.57 sommartid
+    - cron: "57 8 * * 1-5"   # 09.57 vintertid / 10.57 sommartid
+    - cron: "57 9 * * 1-5"   # 10.57 vintertid
   workflow_dispatch:
   push:
     branches: [main]
@@ -43,7 +44,7 @@ jobs:
           set -- $SCHEMA
           lokal=$(TZ=Europe/Stockholm date -d "$(date -u +%F) $2:$1 UTC" +%H:%M)
           case "$lokal" in
-            06:40|07:10|08:45|10:00|11:00) echo "kor=true" >> "$GITHUB_OUTPUT"; echo "Kör: $lokal svensk tid" ;;
+            06:40|07:10|08:45|09:57|10:57) echo "kor=true" >> "$GITHUB_OUTPUT"; echo "Kör: $lokal svensk tid" ;;
             *) echo "kor=false" >> "$GITHUB_OUTPUT"; echo "Hoppar över: $lokal svensk tid" ;;
           esac
 
