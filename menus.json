@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T14:52:04+01:00",
+ "updated": "2026-11-10T15:47:05+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -400,8 +400,7 @@
    }
   },
   "kitchenclub": {
-   "status": "fel",
-   "note": "Dagens meny syns inte än",
+   "status": "ok",
    "days": {
     "2026-11-09": {
      "dishes": [
