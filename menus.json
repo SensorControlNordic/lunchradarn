@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T18:32:28+01:00",
+ "updated": "2026-11-11T13:57:11+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -72,6 +72,42 @@
        "t": "veg",
        "n": "* Halloumi raggmunk serveras med lingonkeso och mixsallad",
        "en": "* Halloumi raggmunk (Swedish potato pancake) served with lingonberry cottage cheese and mixed salad"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
+     "extra_en": "Today's extra: TODAY WE'RE SERVING BREDBAR'S HOMEMADE SOFT CAKES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
+    },
+    "2026-11-11": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Schweizerschnitzel \"cordon bleu\" med rödvinsås, coleslaw och stekt potatis",
+       "en": "Schweizerschnitzel \"cordon bleu\" with red wine sauce, coleslaw and fried potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Bredbars högrevsburgare med klyftpotatis och passande tillbehör",
+       "en": "Thick beef burger with potato wedges and suitable accompaniments"
+      },
+      {
+       "t": "kott",
+       "n": "Gratinerad falukorv med mozzarella och tomat, mos och rödvinsås",
+       "en": "Gratinated falukorv (Swedish sausage) with mozzarella and tomato, mashed potatoes and red wine sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Pocherad koljafilé med sandefjordsås, marinerade räkor och mos",
+       "en": "Poached haddock fillet with Sandefjord sauce, marinated shrimp and mashed potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Halloumi burgare",
+       "en": "Halloumi burger"
+      },
+      {
+       "t": "kott",
+       "n": "Färsk fylld tortellini med spenat och ricotta, tomatsås, pinjenötter och grana padano",
+       "en": "Fresh filled tortellini with spinach and ricotta, tomato sauce, pine nuts and grana padano"
       }
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
@@ -453,11 +489,33 @@
      ],
      "extra": "Dagens tips: viltfärsbiff",
      "extra_en": "Today's tip: game mince patty"
+    },
+    "2026-11-11": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Gråärtsfalafel med bulgur, persilja, tomat, tahini och yoghurtsås",
+       "en": "Grey pea falafel with bulgur, parsley, tomato, tahini and yoghurt sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Krämig fiskgryta med fänkål, räkor, tomat, aioli",
+       "en": "Creamy fish stew with fennel, shrimp, tomato and aioli"
+      },
+      {
+       "t": "kott",
+       "n": "Het kyckling med mango chutney, chili, grädde",
+       "en": "Spicy chicken with mango chutney, chili and cream"
+      }
+     ],
+     "extra": "Dagens tips: krämig fiskgryta",
+     "extra_en": "Today's tip: creamy fish stew"
     }
    }
   },
   "lillaangel": {
-   "status": "ok",
+   "status": "fel",
+   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
    "days": {
     "2026-11-09": {
      "dishes": [
