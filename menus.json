@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T13:57:11+01:00",
+ "updated": "2026-11-11T17:56:59+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -514,8 +514,7 @@
    }
   },
   "lillaangel": {
-   "status": "fel",
-   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+   "status": "ok",
    "days": {
     "2026-11-09": {
      "dishes": [
