@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T18:41:02+01:00",
+ "updated": "2026-11-12T06:43:44+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -112,6 +112,42 @@
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
      "extra_en": "Today's extra: TODAY WE'RE SERVING BREDBAR'S HOMEMADE SOFT CAKES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
+    },
+    "2026-11-12": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Wallenbergare med skirat smör, lingon och mos",
+       "en": "Wallenbergare (veal patty) with melted butter, lingonberries and mashed potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Panerad torsk serveras med skagenröra och dillslungad potatis",
+       "en": "Breaded cod served with skagenröra (Swedish shrimp salad) and dill-tossed potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Fransk Oxgryta \"Bouef bourguignon\" med basmatiris",
+       "en": "French beef stew \"Boeuf bourguignon\" with basmati rice"
+      },
+      {
+       "t": "kott",
+       "n": "Spaghetti bolognese med grana padano",
+       "en": "Spaghetti bolognese with grana padano"
+      },
+      {
+       "t": "soppa",
+       "n": "Ärtsoppa",
+       "en": "Ärtsoppa (traditional Swedish pea soup)"
+      },
+      {
+       "t": "veg",
+       "n": "Färsk fylld tortellini med spenat och ricotta, tomatsås, pinjenötter och grana padano",
+       "en": "Fresh filled tortellini with spinach and ricotta, tomato sauce, pine nuts and grana padano"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE PANNKAKSBUFFÉ och PASSANDE TILLBEHÖR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
+     "extra_en": "Today's extra: TODAY BREDBAR'S HOMEMADE PANCAKE BUFFET with matching accompaniments. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate and more, 145 SEK."
     }
    }
   },
@@ -510,6 +546,27 @@
      ],
      "extra": "Dagens tips: krämig fiskgryta",
      "extra_en": "Today's tip: creamy fish stew"
+    },
+    "2026-11-12": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Jordärtskockssoppa med knaperstekt bacon, pannkakor, sylt, vaniljvisp",
+       "en": "Jerusalem artichoke soup with crispy fried bacon, pancakes, jam and vanilla whipped cream"
+      },
+      {
+       "t": "fisk",
+       "n": "Ugnsbakad lax med kall rom och gräslökssås",
+       "en": "Oven-baked salmon with cold roe and chive sauce"
+      },
+      {
+       "t": "kott",
+       "n": "Gyros på fläskkarré med tzatziki, libabröd",
+       "en": "Pork collar gyros with tzatziki, libabröd (soft flatbread)"
+      }
+     ],
+     "extra": "Dagens tips: ugnsbakad lax",
+     "extra_en": "Today's tip: oven-baked salmon"
     }
    }
   },
