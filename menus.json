@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T06:43:40+01:00",
+ "updated": "2026-11-13T07:43:45+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -607,13 +607,19 @@
     "2026-11-13": {
      "dishes": [
       {
+       "t": "veg",
+       "n": "Gråärtsfalafel med tzatziki"
+      },
+      {
+       "t": "fisk",
+       "n": "Panerad stekt sejfilé med kall rom och gräslökssås"
+      },
+      {
        "t": "kott",
-       "n": "Kockens val",
-       "en": "Chef's choice"
+       "n": "Fläsk schnitzel med kryddsmör"
       }
      ],
-     "extra": "Dagens tips: kockens val",
-     "extra_en": "Today's tip: chef's choice"
+     "extra": "Dagens tips: panerad stekt sejfilé"
     }
    }
   },
