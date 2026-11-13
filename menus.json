@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T18:54:46+01:00",
+ "updated": "2026-11-13T06:43:40+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -148,6 +148,42 @@
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE PANNKAKSBUFFÉ och PASSANDE TILLBEHÖR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
      "extra_en": "Today's extra: TODAY BREDBAR'S HOMEMADE PANCAKE BUFFET with matching accompaniments. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate and more, 145 SEK."
+    },
+    "2026-11-13": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Bredbars schnitzel serveras med lökanjovis mix, bea, rödvinssås och stekt potatis",
+       "en": "Bredbar's schnitzel served with onion and anchovy mix, béarnaise, red wine sauce and fried potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt laxfilé med saffransås, babyspenat och basmatiris",
+       "en": "Fried salmon fillet with saffron sauce, baby spinach and basmati rice"
+      },
+      {
+       "t": "kott",
+       "n": "Örtmarinerad kycklingfilé med grönpepparsås, potatisgratäng och frästa haricot verts",
+       "en": "Herb-marinated chicken fillet with green pepper sauce, potato gratin and sautéed haricots verts"
+      },
+      {
+       "t": "kott",
+       "n": "Ungersk Högrevsgryta \"gulasch\" med basmatiris o gräddfil",
+       "en": "Hungarian beef chuck stew \"goulash\" with basmati rice and sour cream"
+      },
+      {
+       "t": "kott",
+       "n": "Hemlagad \" Lasagne Al Forno\" med köttfärssås toppas med rucola, tomatsås, parmesan ost",
+       "en": "Homemade \"Lasagne al Forno\" with meat sauce, topped with arugula, tomato sauce and parmesan cheese"
+      },
+      {
+       "t": "veg",
+       "n": "Stekt halloumi med myntayoghurt, mixsallad och stekt potatis",
+       "en": "Fried halloumi with mint yoghurt, mixed salad and fried potatoes"
+      }
+     ],
+     "extra": "Dagens extra: Bredbars hemlagade äppelpaj och vaniljsås. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
+     "extra_en": "Today's extra: Bredbar's homemade apple pie with vanilla sauce. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
     }
    }
   },
@@ -567,6 +603,17 @@
      ],
      "extra": "Dagens tips: ugnsbakad lax",
      "extra_en": "Today's tip: oven-baked salmon"
+    },
+    "2026-11-13": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Kockens val",
+       "en": "Chef's choice"
+      }
+     ],
+     "extra": "Dagens tips: kockens val",
+     "extra_en": "Today's tip: chef's choice"
     }
    }
   },
