@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T08:44:02+01:00",
+ "updated": "2026-11-13T09:43:44+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -158,28 +158,18 @@
       },
       {
        "t": "fisk",
-       "n": "Stekt laxfilé med saffransås, babyspenat och basmatiris",
-       "en": "Fried salmon fillet with saffron sauce, baby spinach and basmati rice"
+       "n": "Saffransdoftande fisk och skaldjursgryta med aioli, räkor, krutonger och kokt potatis",
+       "en": "Saffron-scented fish and shellfish stew with aioli, shrimp, croutons and boiled potatoes"
       },
       {
        "t": "kott",
-       "n": "Örtmarinerad kycklingfilé med grönpepparsås, potatisgratäng och frästa haricot verts",
-       "en": "Herb-marinated chicken fillet with green pepper sauce, potato gratin and sautéed haricots verts"
-      },
-      {
-       "t": "kott",
-       "n": "Ungersk Högrevsgryta \"gulasch\" med basmatiris o gräddfil",
-       "en": "Hungarian beef chuck stew \"goulash\" with basmati rice and sour cream"
-      },
-      {
-       "t": "kott",
-       "n": "Hemlagad \" Lasagne Al Forno\" med köttfärssås toppas med rucola, tomatsås, parmesan ost",
-       "en": "Homemade \"Lasagne al Forno\" with meat sauce, topped with arugula, tomato sauce and parmesan cheese"
+       "n": "Brässerad kycklingfilé \"greek style\" med tzatziki, fetaost, kalamataoliver, tomatsås och ris/stekt potatis",
+       "en": "Braised chicken fillet \"Greek style\" with tzatziki, feta, kalamata olives, tomato sauce and rice or fried potatoes"
       },
       {
        "t": "veg",
-       "n": "Stekt halloumi med myntayoghurt, mixsallad och stekt potatis",
-       "en": "Fried halloumi with mint yoghurt, mixed salad and fried potatoes"
+       "n": "Stekt halloumi på spett med tzatziki, mixsallad och stekt potatis",
+       "en": "Fried halloumi skewer with tzatziki, mixed salad and fried potatoes"
       }
      ],
      "extra": "Dagens extra: Bredbars hemlagade äppelpaj och vaniljsås. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
@@ -628,7 +618,8 @@
    }
   },
   "lillaangel": {
-   "status": "ok",
+   "status": "fel",
+   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
    "days": {
     "2026-11-09": {
      "dishes": [
