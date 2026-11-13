@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T07:43:45+01:00",
+ "updated": "2026-11-13T08:44:02+01:00",
  "week": 46,
  "restaurants": {
   "bredbar": {
@@ -608,18 +608,22 @@
      "dishes": [
       {
        "t": "veg",
-       "n": "Gråärtsfalafel med tzatziki"
+       "n": "Gråärtsfalafel med tzatziki",
+       "en": "Grey pea falafel with tzatziki"
       },
       {
        "t": "fisk",
-       "n": "Panerad stekt sejfilé med kall rom och gräslökssås"
+       "n": "Panerad stekt sejfilé med kall rom och gräslökssås",
+       "en": "Breaded fried pollock fillet with cold roe sauce and chive sauce"
       },
       {
        "t": "kott",
-       "n": "Fläsk schnitzel med kryddsmör"
+       "n": "Fläsk schnitzel med kryddsmör",
+       "en": "Pork schnitzel with herb butter"
       }
      ],
-     "extra": "Dagens tips: panerad stekt sejfilé"
+     "extra": "Dagens tips: panerad stekt sejfilé",
+     "extra_en": "Today's tip: breaded fried pollock fillet"
     }
    }
   },
