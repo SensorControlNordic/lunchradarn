@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T11:06:15+01:00",
+ "updated": "2026-11-16T14:59:24+01:00",
  "week": 47,
  "restaurants": {
   "bredbar": {
@@ -390,9 +390,85 @@
    }
   },
   "lillaangel": {
-   "status": "fel",
-   "note": "fel vecka på sidan (v. 46)",
-   "days": {}
+   "status": "ok",
+   "days": {
+    "2026-11-17": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Högrevsgryta med ris",
+       "en": "Beef chuck stew with rice"
+      },
+      {
+       "t": "fisk",
+       "n": "Panerad spättafilé med kokt potatis, remouladsås och gröna ärtor",
+       "en": "Breaded plaice fillet with boiled potatoes, remoulade sauce and green peas"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokt potatis och champinjonsås",
+       "en": "Vegetarian balls with boiled potatoes and mushroom sauce"
+      }
+     ]
+    },
+    "2026-11-18": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Pannbiff med potatismos och champinjonsås",
+       "en": "Pannbiff (Swedish pan-fried beef patty) with mashed potatoes and mushroom sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Friterad torskfilé med potatismos och citronsås",
+       "en": "Deep-fried cod fillet with mashed potatoes and lemon sauce"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokt potatis och champinjonsås",
+       "en": "Vegetarian balls with boiled potatoes and mushroom sauce"
+      }
+     ]
+    },
+    "2026-11-19": {
+     "dishes": [
+      {
+       "t": "soppa",
+       "n": "Ärtsoppa med pannkakor och lingonsylt",
+       "en": "Ärtsoppa (Swedish yellow pea soup) with pancakes and lingonberry jam"
+      },
+      {
+       "t": "fisk",
+       "n": "Havets Wallenbergare med potatismos, gröna ärtor och brynt smör",
+       "en": "Havets Wallenbergare (seafood patty) with mashed potatoes, green peas and browned butter"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokt potatis och champinjonsås",
+       "en": "Vegetarian balls with boiled potatoes and mushroom sauce"
+      }
+     ]
+    },
+    "2026-11-20": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Plankstek med stekt potatis och bearnaisesås",
+       "en": "Plankstek (Swedish oven-baked steak on a plank) with fried potatoes and bearnaise sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt lax med stekt potatis och saffranssås",
+       "en": "Pan-fried salmon with fried potatoes and saffron sauce"
+      },
+      {
+       "t": "veg",
+       "n": "Vegetariska bullar med kokt potatis och champinjonsås",
+       "en": "Vegetarian balls with boiled potatoes and mushroom sauce"
+      }
+     ]
+    }
+   }
   }
  }
 }
