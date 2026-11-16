@@ -1,11 +1,47 @@
 {
- "updated": "2026-11-16T09:43:43+01:00",
+ "updated": "2026-11-16T10:43:37+01:00",
  "week": 47,
  "restaurants": {
   "bredbar": {
-   "status": "fel",
-   "note": "hittade inga rätter",
-   "days": {}
+   "status": "ok",
+   "days": {
+    "2026-11-16": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Kalvfärsmedaljonger med kantarellsås, lingon, pressgurka och mos",
+       "en": "Minced veal medallions with chanterelle sauce, lingonberries, pressed cucumber and mashed potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Mixgrill med kycklingfilé, fläsknoisetter, bacon, bea, rödvinsås och stekt potatis",
+       "en": "Mixed grill with chicken fillet, pork noisettes, bacon, béarnaise, red wine sauce and fried potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Fransk Oxgryta \"Bouef bourguignon\" med basmatiris",
+       "en": "French beef stew \"Boeuf bourguignon\" with basmati rice"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt laxfilé med västkuströra, citron och dillslungad potatis",
+       "en": "Fried salmon fillet with västkuströra (West Coast seafood and mayonnaise mix), lemon and dill-tossed potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Pan-fried breaded plaice fillet with västkuströra, lemon, and dill-tossed potatoes",
+       "en": "Pan-fried breaded plaice fillet with västkuströra (West Coast seafood and mayonnaise mix), lemon, and dill-tossed potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Halloumi stroganoff med basmatiris",
+       "en": "Halloumi stroganoff with basmati rice"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145kr.",
+     "extra_en": "Extra today: TODAY BREDBAR TREATS YOU TO HOMEMADE SOFT CAKES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
+    }
+   }
   },
   "matronan": {
    "status": "ok",
