@@ -1,273 +1,102 @@
 {
- "updated": "2026-11-13T18:29:19+01:00",
- "week": 46,
+ "updated": "2026-11-16T06:43:48+01:00",
+ "week": 47,
  "restaurants": {
   "bredbar": {
-   "status": "ok",
-   "days": {
-    "2026-11-09": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Pljeskavica med ajvar, gräddfil, rödlök, rödvinsås och rösti potatis",
-       "en": "Pljeskavica (Balkan minced meat patty) with ajvar, sour cream, red onion, red wine sauce and rösti potatoes"
-      },
-      {
-       "t": "kott",
-       "n": "Biff stroganoff med basmatiris, gräddfil och saltgurka",
-       "en": "Beef stroganoff with basmati rice, sour cream and pickled cucumber"
-      },
-      {
-       "t": "kott",
-       "n": "Fläsknoisetter \"Black och White med bea, rödvinsås och råstekt potatis",
-       "en": "Pork noisettes \"Black and White\" with béarnaise, red wine sauce and pan-fried potatoes"
-      },
-      {
-       "t": "kott",
-       "n": "Pork noisettes \"Black och White\" served with béarnaise sauce, red wine sauce, and pan-fried potatoes",
-       "en": "Pork noisettes \"Black and White\" served with béarnaise sauce, red wine sauce and pan-fried potatoes"
-      },
-      {
-       "t": "fisk",
-       "n": "Stekt panerad spättafilé med västkuströra, citron och dillslungad potatis",
-       "en": "Pan-fried breaded plaice fillet with västkuströra (Swedish West Coast seafood salad), lemon and dill-tossed potatoes"
-      },
-      {
-       "t": "kott",
-       "n": "Pan-fried breaded plaice fillet with västkuströra, lemon, and dill-tossed potatoes",
-       "en": "Pan-fried breaded plaice fillet with västkuströra (Swedish West Coast seafood salad), lemon and dill-tossed potatoes"
-      },
-      {
-       "t": "veg",
-       "n": "Halloumi stroganoff med basmatiris",
-       "en": "Halloumi stroganoff with basmati rice"
-      }
-     ],
-     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145kr.",
-     "extra_en": "Extra today: TODAY BREDBAR TREATS YOU TO HOMEMADE SOFT COOKIES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate and more, 145 SEK."
-    },
-    "2026-11-10": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Raggmunk och fläsk serveras med lingon - alternativt löksås och kokt potatis",
-       "en": "Raggmunk (Swedish potato pancake) and pork served with lingonberries, or onion sauce and boiled potatoes"
-      },
-      {
-       "t": "kott",
-       "n": "Persiljejärpar med gräddsås, lingon, pressgurka och mos",
-       "en": "Persiljejärpar (Swedish parsley patties) with cream sauce, lingonberries, pressed cucumber and mashed potatoes"
-      },
-      {
-       "t": "kott",
-       "n": "Stekt örtmarinerad kycklingfilé \"rödcurrysås\", cashewnötter och basmatiris",
-       "en": "Fried herb-marinated chicken fillet with \"red curry sauce\", cashew nuts and basmati rice"
-      },
-      {
-       "t": "fisk",
-       "n": "Stekt laxfilé med avokadocreme, citron och dillslungad potatis",
-       "en": "Fried salmon fillet with avocado cream, lemon and dill-tossed potatoes"
-      },
-      {
-       "t": "veg",
-       "n": "* Halloumi raggmunk serveras med lingonkeso och mixsallad",
-       "en": "* Halloumi raggmunk (Swedish potato pancake) served with lingonberry cottage cheese and mixed salad"
-      }
-     ],
-     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
-     "extra_en": "Today's extra: TODAY WE'RE SERVING BREDBAR'S HOMEMADE SOFT CAKES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
-    },
-    "2026-11-11": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Schweizerschnitzel \"cordon bleu\" med rödvinsås, coleslaw och stekt potatis",
-       "en": "Schweizerschnitzel \"cordon bleu\" with red wine sauce, coleslaw and fried potatoes"
-      },
-      {
-       "t": "kott",
-       "n": "Bredbars högrevsburgare med klyftpotatis och passande tillbehör",
-       "en": "Thick beef burger with potato wedges and suitable accompaniments"
-      },
-      {
-       "t": "kott",
-       "n": "Gratinerad falukorv med mozzarella och tomat, mos och rödvinsås",
-       "en": "Gratinated falukorv (Swedish sausage) with mozzarella and tomato, mashed potatoes and red wine sauce"
-      },
-      {
-       "t": "fisk",
-       "n": "Pocherad koljafilé med sandefjordsås, marinerade räkor och mos",
-       "en": "Poached haddock fillet with Sandefjord sauce, marinated shrimp and mashed potatoes"
-      },
-      {
-       "t": "veg",
-       "n": "Halloumi burgare",
-       "en": "Halloumi burger"
-      },
-      {
-       "t": "kott",
-       "n": "Färsk fylld tortellini med spenat och ricotta, tomatsås, pinjenötter och grana padano",
-       "en": "Fresh filled tortellini with spinach and ricotta, tomato sauce, pine nuts and grana padano"
-      }
-     ],
-     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
-     "extra_en": "Today's extra: TODAY WE'RE SERVING BREDBAR'S HOMEMADE SOFT CAKES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
-    },
-    "2026-11-12": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Wallenbergare med skirat smör, lingon och mos",
-       "en": "Wallenbergare (veal patty) with melted butter, lingonberries and mashed potatoes"
-      },
-      {
-       "t": "fisk",
-       "n": "Panerad torsk serveras med skagenröra och dillslungad potatis",
-       "en": "Breaded cod served with skagenröra (Swedish shrimp salad) and dill-tossed potatoes"
-      },
-      {
-       "t": "kott",
-       "n": "Fransk Oxgryta \"Bouef bourguignon\" med basmatiris",
-       "en": "French beef stew \"Boeuf bourguignon\" with basmati rice"
-      },
-      {
-       "t": "kott",
-       "n": "Spaghetti bolognese med grana padano",
-       "en": "Spaghetti bolognese with grana padano"
-      },
-      {
-       "t": "soppa",
-       "n": "Ärtsoppa",
-       "en": "Ärtsoppa (traditional Swedish pea soup)"
-      },
-      {
-       "t": "veg",
-       "n": "Färsk fylld tortellini med spenat och ricotta, tomatsås, pinjenötter och grana padano",
-       "en": "Fresh filled tortellini with spinach and ricotta, tomato sauce, pine nuts and grana padano"
-      }
-     ],
-     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE PANNKAKSBUFFÉ och PASSANDE TILLBEHÖR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
-     "extra_en": "Today's extra: TODAY BREDBAR'S HOMEMADE PANCAKE BUFFET with matching accompaniments. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate and more, 145 SEK."
-    },
-    "2026-11-13": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Bredbars schnitzel serveras med lökanjovis mix, bea, rödvinssås och stekt potatis",
-       "en": "Bredbar's schnitzel served with onion and anchovy mix, béarnaise, red wine sauce and fried potatoes"
-      },
-      {
-       "t": "fisk",
-       "n": "Saffransdoftande fisk och skaldjursgryta med aioli, räkor, krutonger och kokt potatis",
-       "en": "Saffron-scented fish and shellfish stew with aioli, shrimp, croutons and boiled potatoes"
-      },
-      {
-       "t": "kott",
-       "n": "Brässerad kycklingfilé \"greek style\" med tzatziki, fetaost, kalamataoliver, tomatsås och ris/stekt potatis",
-       "en": "Braised chicken fillet \"Greek style\" with tzatziki, feta, kalamata olives, tomato sauce and rice or fried potatoes"
-      },
-      {
-       "t": "veg",
-       "n": "Stekt halloumi på spett med tzatziki, mixsallad och stekt potatis",
-       "en": "Fried halloumi skewer with tzatziki, mixed salad and fried potatoes"
-      }
-     ],
-     "extra": "Dagens extra: Bredbars hemlagade äppelpaj och vaniljsås. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
-     "extra_en": "Today's extra: Bredbar's homemade apple pie with vanilla sauce. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
-    }
-   }
+   "status": "fel",
+   "note": "hittade inga rätter",
+   "days": {}
   },
   "matronan": {
-   "status": "fel",
-   "note": "fel vecka på sidan (v. 47)",
+   "status": "ok",
    "days": {
-    "2026-11-09": {
+    "2026-11-16": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Wallenbergare med sprucken rödvinssås, mos, rårörda lingon och ärtor",
-       "en": "Wallenbergare (veal patty) with red wine sauce, mashed potatoes, lingonberry compote and peas"
+       "n": "Köttbullar med mos, gräddsås, rårörda lingon och inlagd gurka",
+       "en": "Meatballs with mashed potatoes, cream sauce, lingonberry compote and pickled cucumber"
       },
       {
        "t": "fisk",
-       "n": "Örtkrustad kummel med rostad potatis, citroncreme och grönt",
-       "en": "Herb-crusted hake with roasted potatoes, lemon cream and greens"
+       "n": "Stekt panerad fiskfilé med skagen, rostad potatis och citron",
+       "en": "Fried breaded fish fillet with skagen (Swedish shrimp and dill mayonnaise), roasted potatoes and lemon"
       },
       {
        "t": "veg",
-       "n": "Grönsaksgryta med kokosmjölk, gul curry och kikärtor, ris samt koriandermarinerad mozzarella",
-       "en": "Vegetable stew with coconut milk, yellow curry and chickpeas, rice and coriander-marinated mozzarella"
+       "n": "Lasagne med spenat och fetaost samt tomatsås",
+       "en": "Lasagne with spinach and feta, and tomato sauce"
       }
      ]
     },
-    "2026-11-10": {
+    "2026-11-17": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Matronans raggisar med stekt fläsk, rårörda lingon och napolisallad",
-       "en": "Matronans raggisar (Swedish potato pancakes) with fried pork, lingonberry compote and Napoli salad"
+       "n": "Krämig fläskfilégryta med paprika, bacon, tomater och ris",
+       "en": "Creamy pork tenderloin stew with bell pepper, bacon, tomatoes and rice"
       },
       {
        "t": "fisk",
-       "n": "Fish och Chips på vårt sätt med klyftpotatis, dansk remoulad och picklad lök",
-       "en": "Fish and chips our way with potato wedges, Danish remoulade and pickled onion"
+       "n": "Feta och basilikakrämbakad lax med smörstekta betor och kokt potatis",
+       "en": "Salmon baked with feta and basil cream, butter-fried beetroot and boiled potatoes"
       },
       {
        "t": "veg",
-       "n": "Grönsaksgryta med kokosmjölk, gul curry och kikärtor, ris samt koriandermarinerad mozzarella",
-       "en": "Vegetable stew with coconut milk, yellow curry and chickpeas, rice and coriander-marinated mozzarella"
+       "n": "Lasagne med spenat och fetaost samt tomatsås",
+       "en": "Lasagne with spinach and feta, and tomato sauce"
       }
      ]
     },
-    "2026-11-11": {
+    "2026-11-18": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Schnitzel med vitlökssmör, bönor, rostad potatis, citron och rödvinssås",
-       "en": "Schnitzel with garlic butter, beans, roasted potatoes, lemon and red wine sauce"
-      },
-      {
-       "t": "kott",
-       "n": "Råraka med skagen, napolisallad, picklad lök och citron",
-       "en": "Råraka (Swedish grated potato pancake) with shrimp salad, Napoli salad, pickled onion and lemon"
-      },
-      {
-       "t": "veg",
-       "n": "Ugnsomelett med kantarellstuvning och rostade rotsaker",
-       "en": "Oven-baked omelette with chanterelle stew and roasted root vegetables"
-      }
-     ]
-    },
-    "2026-11-12": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Fläskfilémedaljonger med råstekt potatis, bearnaise samt tomat och fetasallad",
-       "en": "Pork tenderloin medallions with pan-fried potatoes, bearnaise, and tomato and feta salad"
+       "n": "Schnitzel med brynt löksmör, bönor, rostad potatis, citron och rödvinssås",
+       "en": "Schnitzel with browned onion butter, beans, roasted potatoes, lemon and red wine sauce"
       },
       {
        "t": "fisk",
-       "n": "Pestocremebakad laxfilé med smörstekta grönsaker, kokt potatis och citron",
-       "en": "Pesto cream baked salmon fillet with butter-fried vegetables, boiled potatoes and lemon"
+       "n": "Fiskgratäng med lax och kummel, handskalade räkor och potatismos",
+       "en": "Fish gratin with salmon and hake, hand-peeled shrimp and mashed potatoes"
       },
       {
        "t": "veg",
-       "n": "Ugnsomelett med kantarellstuvning och rostade rotsaker",
-       "en": "Oven-baked omelette with chanterelle stew and roasted root vegetables"
+       "n": "Halloumi Stroganoff med kikärtor och ris",
+       "en": "Halloumi stroganoff with chickpeas and rice"
       }
      ]
     },
-    "2026-11-13": {
+    "2026-11-19": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Nattbakad högrev med rödvinssås, potatisgratäng, bearnaise och grönt",
-       "en": "Overnight-baked beef chuck with red wine sauce, potato gratin, bearnaise and greens"
+       "n": "Pljeskavica med råstekt potatis, ajvar, bearnaise, gräddfil och löksallad",
+       "en": "Pljeskavica with pan-fried potatoes, ajvar, bearnaise, sour cream and onion salad"
       },
       {
        "t": "fisk",
-       "n": "Laxpudding med brynt smör, dill och citron",
-       "en": "Laxpudding (Swedish salmon and potato casserole) with browned butter, dill and lemon"
+       "n": "Fisk Taco i tortillabröd med ris, mangosalsa, gräddfil",
+       "en": "Fish taco in a tortilla with rice, mango salsa and sour cream"
+      },
+      {
+       "t": "veg",
+       "n": "Halloumi Stroganoff med kikärtor och ris",
+       "en": "Halloumi stroganoff with chickpeas and rice"
+      }
+     ]
+    },
+    "2026-11-20": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Pankostekt kycklingfilé med chilibea, skivad rostad potatis och chilistekt majs",
+       "en": "Panko-fried chicken fillet with chili bearnaise, sliced roasted potatoes and chili-fried corn"
+      },
+      {
+       "t": "fisk",
+       "n": "Pocherad kolja med rödbetor, kapris, brynt smör och kokt potatis",
+       "en": "Poached haddock with beetroot, capers, browned butter and boiled potatoes"
       },
       {
        "t": "veg",
@@ -281,106 +110,106 @@
   "bramat": {
    "status": "ok",
    "days": {
-    "2026-11-09": {
+    "2026-11-16": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Högrevsgryta med rostad vitlök, tomat och rött vin serveras med rostad potatis",
-       "en": "Beef chuck stew with roasted garlic, tomato and red wine, served with roasted potatoes"
+       "n": "Chili på högrev serveras med picklad rödlök, gräddfil, basmatris och nachos",
+       "en": "Beef chuck chili served with pickled red onion, sour cream, basmati rice and nachos"
       },
       {
        "t": "fisk",
-       "n": "Saffransdoftande fiskgryta med handskalade räkor, aioli och krutonger",
+       "n": "Italiensk fisk med vitt vin, tomat, vitlök och chili serveras med kokt potatis",
+       "en": "Italian-style fish with white wine, tomato, garlic and chili, served with boiled potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Pasta med ädelsotsås, rostad broccoli toppas med picklad rödlök och grana padano",
+       "en": "Pasta with blue cheese sauce and roasted broccoli, topped with pickled red onion and Grana Padano"
+      }
+     ],
+     "extra": "Vi bjuder på gottis till kaffet",
+     "extra_en": "We treat you to sweets with your coffee"
+    },
+    "2026-11-17": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Kycklingschnitzel serveras med tomatsky, citronsmör och rostad potatis",
+       "en": "Chicken schnitzel served with tomato sauce, lemon butter and roasted potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Saffransdoftande fiskgryta med handskalade räkor aioli och krutonger",
        "en": "Saffron-scented fish stew with hand-peeled shrimp, aioli and croutons"
       },
       {
        "t": "veg",
-       "n": "Spenat- och riccottafylld tortillini, gräddig tomatsås, garna padano och ruccola",
-       "en": "Spinach and ricotta-filled tortellini, creamy tomato sauce, grana padano and arugula"
+       "n": "Marockansk gryta med aubergine, tomat, saffran och kikärtor serveras med fetaostkräm, granatäppelsallad och mandel",
+       "en": "Moroccan stew with aubergine, tomato, saffron and chickpeas, served with feta cream, pomegranate salad and almonds"
       }
      ],
      "extra": "Vi bjuder på gottis till kaffet",
      "extra_en": "We treat you to sweets with your coffee"
     },
-    "2026-11-10": {
+    "2026-11-18": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Marockanska gryta med kyckling, saffran, tomat och kikärtor serveras med basmatiris och fetaostkräm",
-       "en": "Moroccan stew with chicken, saffron, tomato and chickpeas, served with basmati rice and feta cream"
+       "n": "Nattbakad karré med plommongräddsås, rostad potatis och inlagd gurka",
+       "en": "Overnight-baked pork shoulder with plum cream sauce, roasted potatoes and pickled cucumber"
       },
       {
        "t": "fisk",
-       "n": "Panerad fisk med tartarsås och kokt potatis",
-       "en": "Breaded fish with tartar sauce and boiled potatoes"
+       "n": "Fisk lindström serveras med brynt smör och rostad potatis",
+       "en": "Fish Lindström (Swedish beetroot and caper patty) served with browned butter and roasted potatoes"
       },
       {
        "t": "veg",
-       "n": "Fritters med majs, zuccini och kidneybönor serveras med örtktäm",
-       "en": "Fritters with corn, zucchini and kidney beans, served with herb crème fraîche"
+       "n": "Morot- och halloumifritters serveras med tzatziki och rostad potatis",
+       "en": "Carrot and halloumi fritters served with tzatziki and roasted potatoes"
       }
      ],
      "extra": "Vi bjuder på gottis till kaffet",
      "extra_en": "We treat you to sweets with your coffee"
     },
-    "2026-11-11": {
+    "2026-11-19": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Pjleskavica med ajvar, hackad rödlök, gräddfil och rostad potatis",
-       "en": "Pljeskavica (Balkan grilled meat patty) with ajvar, chopped red onion, sour cream and roasted potatoes"
+       "n": "Kålmaja serveras med kokt potatis och rårörda lingon",
+       "en": "Kålmaja (Swedish cabbage stew) served with boiled potatoes and lingonberry compote"
       },
-      {
-       "t": "fisk",
-       "n": "Saffransdoftande fiskgryta med handskalade räkor, aioli och krutonger",
-       "en": "Saffron-scented fish stew with hand-peeled shrimp, aioli and croutons"
-      },
-      {
-       "t": "veg",
-       "n": "Indisk lins- och halloumigryta serveras med basmatiris",
-       "en": "Indian lentil and halloumi stew, served with basmati rice"
-      }
-     ],
-     "extra": "Vi bjuder på gottis till kaffet",
-     "extra_en": "We treat you to sweets with your coffee"
-    },
-    "2026-11-12": {
-     "dishes": [
       {
        "t": "kott",
-       "n": "Pulled pork med coleslaw, basmatiris och nachochips",
-       "en": "Pulled pork with coleslaw, basmati rice and nacho chips"
-      },
-      {
-       "t": "fisk",
-       "n": "Havets wallenbergare med vitvinssås och kokt potatis",
-       "en": "Seafood wallenbergare (fish patty) with white wine sauce and boiled potatoes"
+       "n": "Kalvgryta med grädde, svartpeppar och champinjoner serveras med kokt potatis",
+       "en": "Veal stew with cream, black pepper and mushrooms, served with boiled potatoes"
       },
       {
        "t": "veg",
-       "n": "Ugnsbakad rotselleri, brynt nötsnmör, semitorkade tomater och couscoussallad",
-       "en": "Oven-baked celeriac, browned nut butter, semi-dried tomatoes and couscous salad"
+       "n": "Svamplasagne toppas med semitorkade tomater och grana padano",
+       "en": "Mushroom lasagne topped with semi-dried tomatoes and grana padano"
       }
      ],
      "extra": "Vi bjuder på pannkakor med tillbehör",
      "extra_en": "We treat you to pancakes with toppings"
     },
-    "2026-11-13": {
+    "2026-11-20": {
      "dishes": [
       {
        "t": "kott",
-       "n": "Nattbakad kalvtritip med chilibearnaise, rödvinssås och rostad potatis",
-       "en": "Overnight-baked veal tri-tip with chili bearnaise, red wine sauce and roasted potatoes"
+       "n": "Nattbakad kalvtritip serveras med bearnaise, rödvinssås och rostad potatis",
+       "en": "Overnight-baked veal top rump served with bearnaise, red wine sauce and roasted potatoes"
       },
       {
        "t": "fisk",
-       "n": "Pasta med kräftstjärtar, vitt vin, grädde och babyspenat toppas med grana padano",
-       "en": "Pasta with crayfish tails, white wine, cream and baby spinach, topped with grana padano"
+       "n": "Pasta med kräftstjärtar, citron och dill toppas med grana padano",
+       "en": "Pasta with crayfish tails, lemon and dill, topped with Grana Padano"
       },
       {
-       "t": "veg",
-       "n": "Bowl- friterad avokado, bulgur, picklad rödkål, sojabönor och mango",
-       "en": "Bowl with fried avocado, bulgur, pickled red cabbage, soybeans and mango"
+       "t": "kott",
+       "n": "Norrloumiburgare- krispsallad, picklad rödlök, tomat och chipotledressing serveras med rostad pottais",
+       "en": "Norrloumi burger – crisp lettuce, pickled red onion, tomato and chipotle dressing, served with roasted potatoes"
       }
      ],
      "extra": "Fredagsgottis - Äppelpaj med vaniljsås",
@@ -391,106 +220,106 @@
   "greven": {
    "status": "ok",
    "days": {
-    "2026-11-09": {
+    "2026-11-16": {
      "dishes": [
       {
        "t": "veg",
-       "n": "Aranchini, tomatsås, vitlöksfrästa champinjoner och ruccola",
-       "en": "Arancini (fried risotto balls), tomato sauce, garlic-fried mushrooms and rocket"
+       "n": "Mozzarellagratinerad blomkål med tomatsås och basilikakrossad potatis",
+       "en": "Cauliflower gratinated with mozzarella, with tomato sauce and basil-crushed potatoes"
       },
       {
        "t": "fisk",
-       "n": "Stek flundra med skagen, citron och kokt potatis",
-       "en": "Fried flounder with shrimp salad, lemon and boiled potatoes"
+       "n": "Mozzarellagratinerad kummelfilè med tomatsås och parmesan/parmesankrossad potatis",
+       "en": "Hake fillet gratinated with mozzarella, with tomato sauce and parmesan/parmesan-crushed potatoes"
       },
       {
        "t": "kott",
-       "n": "Pytt i panna med stekt ägg och rödbetor",
-       "en": "Pytt i panna (Swedish fried potato and meat hash) with fried egg and beetroot"
+       "n": "Pannbiff med brynt lök, stekt ägg rödvinsås, saltgurka och potatispurè",
+       "en": "Pannbiff (Swedish pan-fried beef patty) with browned onion, fried egg, red wine sauce, pickled cucumber and potato purée"
       }
      ],
      "extra": "Flera sallader varje dag",
      "extra_en": "Several salads every day"
     },
-    "2026-11-10": {
+    "2026-11-17": {
      "dishes": [
       {
        "t": "veg",
-       "n": "Ricotta fyllda canellonis med tomat och basilikasallad",
-       "en": "Ricotta-filled cannelloni with tomato and basil salad"
+       "n": "Tagliatelle med brynta champinjoner, zuccini, vitlök, spenat och hyvlad grana padano",
+       "en": "Tagliatelle with browned mushrooms, zucchini, garlic, spinach and shaved grana padano"
       },
       {
        "t": "fisk",
-       "n": "Pepparrot och färskostbakad torskfilé med västerbottenost och krossad potatis i dill buljong",
-       "en": "Horseradish and cream cheese baked cod fillet with Västerbotten cheese and crushed potatoes in dill broth"
+       "n": "Stekt dubbelpanerad flundrafilè med dansk remoulad, citron och kokt potatis",
+       "en": "Fried double-breaded flounder fillet with Danish remoulade, lemon and boiled potatoes"
       },
       {
        "t": "kott",
-       "n": "Biff á la Lindström med ört smör",
-       "en": "Biff à la Lindström (Swedish beef patty with beetroot and capers) with herb butter"
+       "n": "Kalvfärslimpa med fetaost och soltorkade tomater, tzatziki, råstekt potatis och portvinsås",
+       "en": "Veal meatloaf with feta and sun-dried tomatoes, tzatziki, pan-fried potatoes and port wine sauce"
       }
      ],
      "extra": "Flera sallader varje dag",
      "extra_en": "Several salads every day"
     },
-    "2026-11-11": {
+    "2026-11-18": {
      "dishes": [
       {
        "t": "veg",
-       "n": "Mozzarella och spenatbiffar med ratatouille och rostad potatis",
-       "en": "Mozzarella and spinach patties with ratatouille and roasted potatoes"
+       "n": "Fetaost/linsfylld aubergin med tomatvinnigrette och ruccola",
+       "en": "Aubergine stuffed with feta and lentils, with tomato vinaigrette and rocket"
       },
       {
        "t": "fisk",
-       "n": "Laxfärserad flundrafilé med krispig purjo, buljong och kokt potatis",
-       "en": "Salmon-stuffed flounder fillet with crispy leek, broth and boiled potatoes"
+       "n": "Ångkokt lättrimmad torskfilè med brynt smör, pepparot, räkor, hackat ägg och kokt potatis",
+       "en": "Steamed lightly salted cod fillet with browned butter, horseradish, shrimp, chopped egg and boiled potatoes"
       },
       {
        "t": "kott",
-       "n": "Kycklingschnitzel med ratatouille och rostad potatis",
-       "en": "Chicken schnitzel with ratatouille and roasted potatoes"
+       "n": "Helstekt örtmarinerad fläskytterfilè med potatisgratäng, rostad zuccini/morot och madeirasås",
+       "en": "Whole-roasted herb-marinated pork sirloin with potato gratin, roasted zucchini/carrot and Madeira sauce"
       }
      ],
      "extra": "Flera sallader varje dag",
      "extra_en": "Several salads every day"
     },
-    "2026-11-12": {
+    "2026-11-19": {
      "dishes": [
       {
        "t": "veg",
-       "n": "Svamp och västerbottenost paj med pepparrotsdressing",
-       "en": "Mushroom and Västerbotten cheese pie with horseradish dressing"
+       "n": "Nordafrikansk grönsaksragu med cous cous och myntayoghurt",
+       "en": "North African vegetable ragout with couscous and mint yoghurt"
       },
       {
        "t": "fisk",
-       "n": "Fiskgratäng med champinjoner, spenat, vitvinssås och duchesse potatis",
-       "en": "Fish gratin with mushrooms, spinach, white wine sauce and duchess potatoes"
+       "n": "Sydfransk fisk och skaldjursgryta med saffransaioli och surdegskrutonger",
+       "en": "South French fish and shellfish stew with saffron aioli and sourdough croutons"
       },
       {
        "t": "kott",
-       "n": "Kalvfärsbiff med grönpepparsås och rostade rotfrukter",
-       "en": "Veal mince patty with green pepper sauce and roasted root vegetables"
+       "n": "Viltwallenbergare med enbärsgräddsås, rårörda lingon och potatispurè",
+       "en": "Game wallenbergare (game patty) with juniper cream sauce, raw-stirred lingonberries and mashed potatoes"
       }
      ],
      "extra": "Flera sallader varje dag",
      "extra_en": "Several salads every day"
     },
-    "2026-11-13": {
+    "2026-11-20": {
      "dishes": [
       {
        "t": "veg",
-       "n": "Lasagne med hyvlad grana padano",
-       "en": "Lasagne with shaved Grana Padano"
+       "n": "Stekt dubbelpanerad rotselleri med kapris, hollandaise och pommes",
+       "en": "Fried double-breaded celeriac with capers, hollandaise and fries"
       },
       {
        "t": "fisk",
-       "n": "Tandoribakad laxfilé med curry ris och gurk- och rädissallad",
-       "en": "Tandoori-baked salmon fillet with curry rice and cucumber and radish salad"
+       "n": "Dillstekt strömmingsflundra med skirat smör, citron och potatismos",
+       "en": "Dill-fried Baltic herring and flounder fillet with melted butter, lemon and mashed potatoes"
       },
       {
        "t": "kott",
-       "n": "Hamburgare med bearnaise, rostad lök, tomat och sallad",
-       "en": "Hamburger with bearnaise, roasted onion, tomato and lettuce"
+       "n": "Fläskschnitzel med hollandaise, kapris, pommes , tomatsallad",
+       "en": "Pork schnitzel with hollandaise, capers, fries and tomato salad"
       }
      ],
      "extra": "Flera sallader varje dag",
@@ -501,242 +330,33 @@
   "kitchenclub": {
    "status": "ok",
    "days": {
-    "2026-11-09": {
+    "2026-11-16": {
      "dishes": [
       {
        "t": "veg",
-       "n": "Morotsfritters med fetaost, spenat",
-       "en": "Carrot fritters with feta and spinach"
+       "n": "Ragu på oumphfärs med rigatonipasta, svamp, parveggio",
+       "en": "Oumph! ragu with rigatoni, mushrooms and Parmigiano Reggiano"
       },
       {
        "t": "fisk",
-       "n": "Havets Wallenbergare med gröna ärtor, dillvelouté",
-       "en": "Wallenbergare (patty) of the sea with green peas and dill velouté"
+       "n": "Laxfärsbiff med krämig dill och pepparrotssås",
+       "en": "Salmon patty with creamy dill and horseradish sauce"
       },
       {
        "t": "kott",
-       "n": "Kyckling steak med rödvinssås, bacon, champinjoner",
-       "en": "Chicken steak with red wine sauce, bacon and mushrooms"
-      },
-      {
-       "t": "kott",
-       "n": "Kalvfärsbiff med rödvinssås, bacon, champinjoner",
-       "en": "Veal patty with red wine sauce, bacon and mushrooms"
+       "n": "Pad kra pao med kycklingfärs, thaibasilika, färsk chili",
+       "en": "Pad kra pao with minced chicken, Thai basil and fresh chili"
       }
      ],
-     "extra": "Dagens tips: havets Wallenbergare",
-     "extra_en": "Today's tip: Wallenbergare (veal patty) of the sea"
-    },
-    "2026-11-10": {
-     "dishes": [
-      {
-       "t": "veg",
-       "n": "Linguine pasta med tomat, vitlök, ruccola, solrosfrön",
-       "en": "Linguine pasta with tomato, garlic, rocket and sunflower seeds"
-      },
-      {
-       "t": "kott",
-       "n": "Viltfärsbiff med kantarellsås, lingon",
-       "en": "Game mince patty with chanterelle sauce and lingonberries"
-      },
-      {
-       "t": "kott",
-       "n": "Stekt rimmat fläsk med löksås",
-       "en": "Fried salted pork with onion sauce"
-      },
-      {
-       "t": "fisk",
-       "n": "Havets Wallenbergare med dillsås",
-       "en": "Seafood Wallenbergare (Swedish patty) with dill sauce"
-      }
-     ],
-     "extra": "Dagens tips: viltfärsbiff",
-     "extra_en": "Today's tip: game mince patty"
-    },
-    "2026-11-11": {
-     "dishes": [
-      {
-       "t": "veg",
-       "n": "Gråärtsfalafel med bulgur, persilja, tomat, tahini och yoghurtsås",
-       "en": "Grey pea falafel with bulgur, parsley, tomato, tahini and yoghurt sauce"
-      },
-      {
-       "t": "fisk",
-       "n": "Krämig fiskgryta med fänkål, räkor, tomat, aioli",
-       "en": "Creamy fish stew with fennel, shrimp, tomato and aioli"
-      },
-      {
-       "t": "kott",
-       "n": "Het kyckling med mango chutney, chili, grädde",
-       "en": "Spicy chicken with mango chutney, chili and cream"
-      }
-     ],
-     "extra": "Dagens tips: krämig fiskgryta",
-     "extra_en": "Today's tip: creamy fish stew"
-    },
-    "2026-11-12": {
-     "dishes": [
-      {
-       "t": "veg",
-       "n": "Jordärtskockssoppa med knaperstekt bacon, pannkakor, sylt, vaniljvisp",
-       "en": "Jerusalem artichoke soup with crispy fried bacon, pancakes, jam and vanilla whipped cream"
-      },
-      {
-       "t": "fisk",
-       "n": "Ugnsbakad lax med kall rom och gräslökssås",
-       "en": "Oven-baked salmon with cold roe and chive sauce"
-      },
-      {
-       "t": "kott",
-       "n": "Gyros på fläskkarré med tzatziki, libabröd",
-       "en": "Pork collar gyros with tzatziki, libabröd (soft flatbread)"
-      }
-     ],
-     "extra": "Dagens tips: ugnsbakad lax",
-     "extra_en": "Today's tip: oven-baked salmon"
-    },
-    "2026-11-13": {
-     "dishes": [
-      {
-       "t": "veg",
-       "n": "Gråärtsfalafel med tzatziki",
-       "en": "Grey pea falafel with tzatziki"
-      },
-      {
-       "t": "fisk",
-       "n": "Panerad stekt sejfilé med kall rom och gräslökssås",
-       "en": "Breaded fried pollock fillet with cold roe sauce and chive sauce"
-      },
-      {
-       "t": "kott",
-       "n": "Fläsk schnitzel med kryddsmör",
-       "en": "Pork schnitzel with herb butter"
-      }
-     ],
-     "extra": "Dagens tips: panerad stekt sejfilé",
-     "extra_en": "Today's tip: breaded fried pollock fillet"
+     "extra": "Dagens tips: laxfärsbiff",
+     "extra_en": "Today's special: salmon patty"
     }
    }
   },
   "lillaangel": {
-   "status": "ok",
-   "days": {
-    "2026-11-09": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Köttbullar med potatispuré, rårörda lingon, pressgurka och gräddsås",
-       "en": "Köttbullar (Swedish meatballs) with mashed potatoes, lingonberry preserve, pressgurka (quick-pickled cucumber) and cream sauce"
-      },
-      {
-       "t": "fisk",
-       "n": "Stekt lax med saffranssås, stekta grönsaker och potatis",
-       "en": "Fried salmon with saffron sauce, sautéed vegetables and potatoes"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetarisk filégryta med jasminris",
-       "en": "Vegetarian fillet stew with jasmine rice"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
-       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
-      }
-     ]
-    },
-    "2026-11-10": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Raggmunk med stekt fläsk och rårörda lingon",
-       "en": "Raggmunk (Swedish potato pancake) with fried pork and lingonberry preserve"
-      },
-      {
-       "t": "fisk",
-       "n": "Smörstekt fiskfilé med stekt potatis, stekta grönsaker och dillsås",
-       "en": "Butter-fried fish fillet with fried potatoes, sautéed vegetables and dill sauce"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetarisk filégryta med jasminris",
-       "en": "Vegetarian fillet stew with jasmine rice"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
-       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
-      }
-     ]
-    },
-    "2026-11-11": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Kycklingcurry med ris och grönsaker",
-       "en": "Chicken curry with rice and vegetables"
-      },
-      {
-       "t": "fisk",
-       "n": "Stekt lax med Sandefjordssås, kokt potatis, sparris och gräslök",
-       "en": "Fried salmon with Sandefjord sauce, boiled potatoes, asparagus and chives"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetarisk filégryta med jasminris",
-       "en": "Vegetarian fillet stew with jasmine rice"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
-       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
-      }
-     ]
-    },
-    "2026-11-12": {
-     "dishes": [
-      {
-       "t": "fisk",
-       "n": "Rimmad lax med stuvad potatis och dill",
-       "en": "Rimmad lax (salt-cured salmon) with stuvad potatis (potatoes in white sauce) and dill"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetarisk filégryta med jasminris",
-       "en": "Vegetarian fillet stew with jasmine rice"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
-       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
-      }
-     ]
-    },
-    "2026-11-13": {
-     "dishes": [
-      {
-       "t": "kott",
-       "n": "Entrecôte med stekt potatis och bearnaisesås",
-       "en": "Entrecôte with fried potatoes and bearnaise sauce"
-      },
-      {
-       "t": "fisk",
-       "n": "Friterad torsk med stekt potatis och spenatsås",
-       "en": "Deep-fried cod with fried potatoes and spinach sauce"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetarisk filégryta med jasminris",
-       "en": "Vegetarian fillet stew with jasmine rice"
-      },
-      {
-       "t": "veg",
-       "n": "Vegetariska bullar med kokta grönsaker och champinjonsås",
-       "en": "Vegetarian balls with boiled vegetables and mushroom sauce"
-      }
-     ]
-    }
-   }
+   "status": "fel",
+   "note": "fel vecka på sidan (v. 46)",
+   "days": {}
   }
  }
 }
