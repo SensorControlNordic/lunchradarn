@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T19:56:26+01:00",
+ "updated": "2026-11-18T06:43:40+01:00",
  "week": 47,
  "restaurants": {
   "bredbar": {
@@ -67,6 +67,42 @@
        "t": "veg",
        "n": "* Halloumi raggmunk serveras med lingonkeso och mixsallad",
        "en": "* Halloumi raggmunk (Swedish potato pancakes) served with lingonberry cottage cheese and mixed salad"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
+     "extra_en": "Today's extra: TODAY WE'RE TREATING YOU TO BREDBAR'S HOMEMADE SOFT CAKES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
+    },
+    "2026-11-18": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Krispig panko panerad kycklingschnitzel med rödvinsås, coleslaw och stekt potatis",
+       "en": "Crispy panko-breaded chicken schnitzel with red wine sauce, coleslaw and fried potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Fläsknoisetter \"black och white\" med bea, rödvinsås, grön sparris och stekt potatis",
+       "en": "Pork noisettes \"black and white\" with béarnaise, red wine sauce, green asparagus and fried potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Sirapglaserade kåldolmar med gräddsås, lingon och mos",
+       "en": "Syrup-glazed kåldolmar (Swedish cabbage rolls) with cream sauce, lingonberries and mashed potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt gösfilé \"grenobloise\" kapris, rödbetor, skirat smör och mos¨",
+       "en": "Fried pike-perch fillet \"grenobloise\" with capers, beetroot, clarified butter and mashed potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Halloumi burgare",
+       "en": "Halloumi burger"
+      },
+      {
+       "t": "kott",
+       "n": "Färsk fylld tortellini med spenat och ricotta, tomatsås, pinjenötter och grana padano",
+       "en": "Fresh filled tortellini with spinach and ricotta, tomato sauce, pine nuts and grana padano"
       }
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
@@ -438,12 +474,33 @@
      ],
      "extra": "Dagens tips: pankopanerad kummel",
      "extra_en": "Today's tip: panko-breaded hake"
+    },
+    "2026-11-18": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Palak paneer med tomat, spenat, garam masala",
+       "en": "Palak paneer with tomato, spinach and garam masala"
+      },
+      {
+       "t": "fisk",
+       "n": "Tkc´s fiskgryta med saffransaioli",
+       "en": "TKC's fish stew with saffron aioli"
+      },
+      {
+       "t": "kott",
+       "n": "Kryddig färsbiff med ajvar och fetaoströra",
+       "en": "Spicy färsbiff (Swedish minced-meat patty) with ajvar and feta cheese spread"
+      }
+     ],
+     "extra": "Dagens tips: tkc´s fiskgryta",
+     "extra_en": "Today's tip: TKC's fish stew"
     }
    }
   },
   "lillaangel": {
    "status": "fel",
-   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+   "note": "fel vecka på sidan (v. 46)",
    "days": {
     "2026-11-17": {
      "dishes": [
