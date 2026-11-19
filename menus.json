@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T19:38:18+01:00",
+ "updated": "2026-11-19T06:43:44+01:00",
  "week": 47,
  "restaurants": {
   "bredbar": {
@@ -102,6 +102,42 @@
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
      "extra_en": "Today's extra: TODAY WE'RE TREATING YOU TO BREDBAR'S HOMEMADE SOFT CAKES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
+    },
+    "2026-11-19": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Wallenbergare med skirat smör, lingon och mos",
+       "en": "Wallenbergare (veal patty) with melted butter, lingonberries and mashed potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Panerad torsk serveras med skagenröra och dillslungad potatis",
+       "en": "Breaded cod served with shrimp salad (skagenröra) and dill-tossed potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Fransk Oxgryta \"Bouef bourguignon\" med basmatiris",
+       "en": "French beef stew \"Boeuf bourguignon\" with basmati rice"
+      },
+      {
+       "t": "kott",
+       "n": "Spaghetti bolognese med grana padano",
+       "en": "Spaghetti bolognese with grana padano"
+      },
+      {
+       "t": "soppa",
+       "n": "Ärtsoppa",
+       "en": "Ärtsoppa (Swedish yellow pea soup)"
+      },
+      {
+       "t": "veg",
+       "n": "Färsk fylld tortellini med spenat och ricotta, tomatsås, pinjenötter och grana padano",
+       "en": "Fresh filled tortellini with spinach and ricotta, tomato sauce, pine nuts and grana padano"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE PANNKAKSBUFFÉ och PASSANDE TILLBEHÖR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
+     "extra_en": "Extra today: TODAY BREDBAR SERVES ITS HOMEMADE PANCAKE BUFFET with matching accompaniments. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
     }
    }
   },
@@ -490,6 +526,27 @@
      ],
      "extra": "Dagens tips: tkc´s fiskgryta",
      "extra_en": "Today's tip: TKC's fish stew"
+    },
+    "2026-11-19": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Krämig champinjonsoppa med pannkakor, sylt, vaniljvisp",
+       "en": "Creamy mushroom soup with pancakes, jam, vanilla whipped cream"
+      },
+      {
+       "t": "fisk",
+       "n": "Pocherad flundrafilé med citron och basilikasås",
+       "en": "Poached flounder fillet with lemon and basil sauce"
+      },
+      {
+       "t": "kott",
+       "n": "Gulaschgryta med gräddfil, saltgurka",
+       "en": "Goulash stew with sour cream, pickled cucumber"
+      }
+     ],
+     "extra": "Dagens tips: pocherad flundrafilé",
+     "extra_en": "Today's tip: poached flounder fillet"
     }
    }
   },
