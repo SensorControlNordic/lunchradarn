@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T08:43:40+01:00",
+ "updated": "2026-11-20T09:43:39+01:00",
  "week": 47,
  "restaurants": {
   "bredbar": {
@@ -148,8 +148,8 @@
       },
       {
        "t": "fisk",
-       "n": "Stekt laxfilé med kall ört och romsås, citron och dillslungad potatis",
-       "en": "Pan-fried salmon fillet with cold herb and roe sauce, lemon and dill-tossed potatoes"
+       "n": "Stekt laxfilé med sandefjordsås, citron och dillslungad potatis",
+       "en": "Pan-fried salmon fillet with Sandefjord sauce (Swedish creamy butter sauce), lemon and dill-tossed potatoes"
       },
       {
        "t": "kott",
@@ -158,8 +158,8 @@
       },
       {
        "t": "veg",
-       "n": "Stekt halloumi på spett med tzatziki, mixsallad och stekt potatis",
-       "en": "Fried halloumi skewer with tzatziki, mixed salad and fried potatoes"
+       "n": "Zucchinibiffar m, myntayoghurt mixsallad och stekt potatis",
+       "en": "Zucchini patties with mint yoghurt, mixed salad and fried potatoes"
       }
      ],
      "extra": "Dagens extra: Bredbars hemlagade äppelpaj och vaniljsås. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
