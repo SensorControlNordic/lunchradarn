@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T06:43:39+01:00",
+ "updated": "2026-11-20T07:46:05+01:00",
  "week": 47,
  "restaurants": {
   "bredbar": {
@@ -577,11 +577,23 @@
     "2026-11-20": {
      "dishes": [
       {
+       "t": "veg",
+       "n": "Växtbaserad lasagne med sås på färska tomater",
+       "en": "Plant-based lasagne with fresh tomato sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Ugnsbakad lax med citron och basilikasås",
+       "en": "Oven-baked salmon with lemon and basil sauce"
+      },
+      {
        "t": "kott",
-       "n": "Kockens val",
-       "en": "Chef's choice"
+       "n": "Kebab på fläskkarré med vitlöksyoghurt, libabröd",
+       "en": "Pork neck kebab with garlic yoghurt, libabröd (Swedish soft flatbread)"
       }
-     ]
+     ],
+     "extra": "Dagens tips: ugnsbakad lax",
+     "extra_en": "Today's tip: oven-baked salmon"
     }
    }
   },
