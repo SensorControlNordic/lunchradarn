@@ -1,11 +1,47 @@
 {
- "updated": "2026-11-23T06:43:42+01:00",
+ "updated": "2026-11-23T07:43:44+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
-   "status": "fel",
-   "note": "hittade inga rätter",
-   "days": {}
+   "status": "ok",
+   "days": {
+    "2026-11-23": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Wallenbergare med skirat smör, lingon, mos och gröna ärtor",
+       "en": "Wallenbergare (veal patty) with melted butter, lingonberries, mashed potatoes and green peas"
+      },
+      {
+       "t": "kott",
+       "n": "Brässerad kycklingfilé \"italian style\" med rödpestosås, champinjoner, pinjenötter och basmatiris",
+       "en": "Braised chicken fillet \"Italian style\" with red pesto sauce, mushrooms, pine nuts and basmati rice"
+      },
+      {
+       "t": "kott",
+       "n": "Braised chicken fillet \"Italian style\" with red pesto sauce, mushrooms, pine nuts och basmati rice",
+       "en": "Braised chicken fillet \"Italian style\" with red pesto sauce, mushrooms, pine nuts and basmati rice"
+      },
+      {
+       "t": "kott",
+       "n": "Fläsknoisetter \"black och white\" med bea, rödvinsås, grön sparris och stekt potatis",
+       "en": "Pork noisettes \"black and white\" with béarnaise, red wine sauce, green asparagus and fried potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Fish och chips med pommes frites och tartatsås",
+       "en": "Fish and chips with French fries and tartar sauce"
+      },
+      {
+       "t": "veg",
+       "n": "Halloumi stroganoff med basmatiris",
+       "en": "Halloumi stroganoff with basmati rice"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145kr.",
+     "extra_en": "Today's extra: TODAY BREDBAR SERVES HOMEMADE SOFT COOKIES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
+    }
+   }
   },
   "matronan": {
    "status": "fel",
