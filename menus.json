@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T08:43:55+01:00",
+ "updated": "2026-11-23T09:43:44+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -44,9 +44,104 @@
    }
   },
   "matronan": {
-   "status": "fel",
-   "note": "fel vecka på sidan (v. 47)",
-   "days": {}
+   "status": "ok",
+   "days": {
+    "2026-11-23": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Köttfärslimpa med champinjonsås, mos och saltgurka",
+       "en": "Köttfärslimpa (Swedish meatloaf) with mushroom sauce, mashed potatoes and pickled cucumber"
+      },
+      {
+       "t": "fisk",
+       "n": "Pocherad lax med dillhollandaise, citron och kokt potatis",
+       "en": "Poached salmon with dill hollandaise, lemon and boiled potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Friterad chevre på salladsbädd med betor och honungsdijon",
+       "en": "Fried chèvre on a bed of salad with beetroot and honey Dijon"
+      }
+     ]
+    },
+    "2026-11-24": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Asian Pork med ris, hoisin, sesam coleslaw och salladslök",
+       "en": "Asian Pork with rice, hoisin, sesame coleslaw and spring onion"
+      },
+      {
+       "t": "fisk",
+       "n": "Fish och Chips på vårt sätt med klyftpotatis, remoulad, citron och picklad lök",
+       "en": "Fish and Chips our way, with potato wedges, remoulade, lemon and pickled onion"
+      },
+      {
+       "t": "veg",
+       "n": "Friterad chevre på salladsbädd med betor och honungsdijon",
+       "en": "Fried chèvre on a bed of salad with beetroot and honey Dijon"
+      }
+     ]
+    },
+    "2026-11-25": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Schnitzel med vitlökssmör, ärtor, rostad potatis, citron och rödvinssås",
+       "en": "Schnitzel with garlic butter, peas, roasted potatoes, lemon and red wine sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Pocherad kolja med vitvinssås, kokt potatis, tomat och rostade frön",
+       "en": "Poached haddock with white wine sauce, boiled potatoes, tomato and roasted seeds"
+      },
+      {
+       "t": "veg",
+       "n": "Böntaco med ris, nachos, guacamole och mangosalsa",
+       "en": "Bean taco with rice, nachos, guacamole and mango salsa"
+      }
+     ]
+    },
+    "2026-11-26": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Wallenbergare med sprucken rödvinssås, mos, rårörda lingon och ärtor",
+       "en": "Wallenbergare (veal patty) with red wine sauce, mashed potatoes, lingonberries and peas"
+      },
+      {
+       "t": "fisk",
+       "n": "Mandelfisk med kokt potatis, citron och brynt dillsmör",
+       "en": "Almond fish with boiled potatoes, lemon and browned dill butter"
+      },
+      {
+       "t": "veg",
+       "n": "Böntaco med ris, nachos, guacamole och mangosalsa",
+       "en": "Bean taco with rice, nachos, guacamole and mango salsa"
+      }
+     ]
+    },
+    "2026-11-27": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Nattbakad högrev med potatisgratäng, rödvinssås, bearnaise och grönt",
+       "en": "Overnight-baked beef chuck with potato gratin, red wine sauce, béarnaise and greens"
+      },
+      {
+       "t": "fisk",
+       "n": "Örtkrustad fiskfilé med citron&dillmajo samt rostad potatis",
+       "en": "Herb-crusted fish fillet with lemon and dill mayo and roasted potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Grönsaksgryta med ris, fetaost och frön",
+       "en": "Vegetable stew with rice, feta and seeds"
+      }
+     ]
+    }
+   }
   },
   "bramat": {
    "status": "ok",
@@ -159,9 +254,72 @@
    }
   },
   "greven": {
-   "status": "fel",
-   "note": "hittade inga rätter för denna vecka",
-   "days": {}
+   "status": "ok",
+   "days": {
+    "2026-11-23": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Arancini med tomatvinegrette och spetskålsallad",
+       "en": "Arancini with tomato vinaigrette and pointed cabbage salad"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt panerad flundra med pepparrot gurkröra, citron och kokt potatis",
+       "en": "Fried breaded flounder with horseradish and cucumber salad, lemon and boiled potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Boeuf bourguignon serveras med potatismos",
+       "en": "Boeuf bourguignon served with mashed potatoes"
+      }
+     ],
+     "extra": "Flera sallader varje dag",
+     "extra_en": "Several salads every day"
+    },
+    "2026-11-24": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Quinoabiffar med mynta yoghurt, picklad rödkål, citros och krossad potatis",
+       "en": "Quinoa patties with mint yoghurt, pickled red cabbage, citrus and crushed potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Halstrad regnbågsfilé med sandefjordsås, tångkaviar, citron och krossad potatis",
+       "en": "Pan-seared rainbow trout fillet with Sandefjordsås (classic Swedish fish sauce), seaweed caviar, lemon and crushed potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Raggmunk med stekt rimmad fläsk och rårörda lingon",
+       "en": "Raggmunk (Swedish potato pancake) with fried salt-cured pork and lingonberries"
+      }
+     ],
+     "extra": "Flera sallader varje dag",
+     "extra_en": "Several salads every day"
+    },
+    "2026-11-25": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Vårrullar med soya dip och stekt ris",
+       "en": "Spring rolls with soy dip and fried rice"
+      },
+      {
+       "t": "fisk",
+       "n": "Sesamfrö halstrad tilapiafilé med citrongräsbuljong och stekt potatis",
+       "en": "Sesame-seed pan-seared tilapia fillet with lemongrass broth and fried potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Krispig kycklinginnerfilé med tomat- och paprika salsa, guacamole och rostad potatis",
+       "en": "Crispy chicken inner fillet with tomato and pepper salsa, guacamole and roasted potatoes"
+      }
+     ],
+     "extra": "Flera sallader varje dag",
+     "extra_en": "Several salads every day"
+    }
+   }
   },
   "kitchenclub": {
    "status": "ok",
@@ -191,7 +349,7 @@
   },
   "lillaangel": {
    "status": "fel",
-   "note": "fel vecka på sidan (v. 46)",
+   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
    "days": {}
   }
  }
