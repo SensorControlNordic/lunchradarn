@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T09:43:44+01:00",
+ "updated": "2026-11-23T10:44:18+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -328,8 +328,8 @@
      "dishes": [
       {
        "t": "veg",
-       "n": "Allo gobi med blomkål, potatis, raita med mynta och gurka, kikärtor",
-       "en": "Aloo gobi-style cauliflower with potatoes, raita with mint and cucumber, chickpeas"
+       "n": "Allo gobi med blomkål, potatis, raita med mynta och gurka, svarta bönor",
+       "en": "Aloo gobi with cauliflower, potato, raita with mint and cucumber, black beans"
       },
       {
        "t": "fisk",
@@ -349,7 +349,7 @@
   },
   "lillaangel": {
    "status": "fel",
-   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+   "note": "fel vecka på sidan (v. 46)",
    "days": {}
   }
  }
