@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T22:53:56+01:00",
+ "updated": "2026-11-24T06:43:43+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -40,6 +40,37 @@
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145kr.",
      "extra_en": "Today's extra: TODAY BREDBAR SERVES HOMEMADE SOFT COOKIES. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 SEK."
+    },
+    "2026-11-24": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Raggmunk och fläsk serveras med lingon - alternativt löksås och kokt potatis",
+       "en": "Raggmunk (Swedish potato pancake) and pork served with lingonberries - or onion sauce and boiled potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Pljeskavica med ajvar, rödvinsås, gräddfil, rödlök och rösti potatis",
+       "en": "Pljeskavica with ajvar, red wine sauce, sour cream, red onion and rösti potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Biff stroganoff med gräddfil, basmatiris och saltgurka",
+       "en": "Beef stroganoff with sour cream, basmati rice and pickled cucumber"
+      },
+      {
+       "t": "fisk",
+       "n": "Ugnsbakad rödingfilé med stuvad potatis och avokado kräm",
+       "en": "Oven-baked Arctic char fillet with stuvad potatoes (creamed potatoes) and avocado cream"
+      },
+      {
+       "t": "veg",
+       "n": "* Halloumi raggmunk serveras med lingonkeso och mixsallad",
+       "en": "* Halloumi raggmunk (Swedish potato pancake) served with lingonberry cottage cheese and mixed salad"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
+     "extra_en": "Today's extra: TODAY BREDBAR'S HOMEMADE SOFT COOKIES ARE ON THE HOUSE. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 kr."
     }
    }
   },
@@ -344,6 +375,27 @@
      ],
      "extra": "Dagens tips: asiatisk fiskgryta",
      "extra_en": "Today's tip: Asian fish stew"
+    },
+    "2026-11-24": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Linguine pasta med grillost, soltorkade tomater, spenat",
+       "en": "Linguine pasta with grilling cheese, sun-dried tomatoes, spinach"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt sejfilé med kapris och rödbetor",
+       "en": "Fried pollock fillet with capers and beetroot"
+      },
+      {
+       "t": "kott",
+       "n": "Mjukbakad fläskkarré med gräddsås, gelé, stekt äpple",
+       "en": "Soft-baked pork neck with cream sauce, jelly, fried apple"
+      }
+     ],
+     "extra": "Dagens tips: stekt sejfilé",
+     "extra_en": "Today's tip: fried pollock fillet"
     }
    }
   },
