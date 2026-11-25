@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T07:43:43+01:00",
+ "updated": "2026-11-25T08:43:45+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -76,28 +76,28 @@
      "dishes": [
       {
        "t": "kott",
-       "n": "Krispig panko panerad kycklingschnitzel med rödvinsås, coleslaw och stekt potatis",
-       "en": "Crispy panko-breaded chicken schnitzel with red wine sauce, coleslaw and fried potatoes"
+       "n": "Schweizerschnitzel \"cordon bleu\" med ost och skinka, rödvinsås, coleslaw och stekt potatis",
+       "en": "Swiss schnitzel \"cordon bleu\" with cheese and ham, red wine sauce, coleslaw and fried potatoes"
       },
       {
        "t": "kott",
-       "n": "Fläsknoisetter \"black och white\" med bea, rödvinsås, grön sparris och stekt potatis",
-       "en": "Pork noisettes \"black and white\" with béarnaise, red wine sauce, green asparagus and fried potatoes"
+       "n": "Husets låda med köttbullar, prinskorv, stekt ägg, mos, rödvinsås",
+       "en": "Husets låda (the house plate) with meatballs, prinskorv (mini sausages), fried egg, mashed potatoes, red wine sauce"
       },
       {
        "t": "kott",
-       "n": "Sirapglaserade kåldolmar med gräddsås, lingon och mos",
-       "en": "Syrup-glazed kåldolmar (Swedish stuffed cabbage rolls) with cream sauce, lingonberries and mashed potatoes"
+       "n": "Stekt kycklingfilé \"flygande jakob\" med banan, jordnötter och basmatiris",
+       "en": "Fried chicken fillet \"Flygande Jacob\" (Swedish chicken casserole) with banana, peanuts and basmati rice"
       },
       {
        "t": "fisk",
-       "n": "Stekt gösfilé \"grenobloise\" kapris, rödbetor, skirat smör och mos¨",
-       "en": "Pan-fried pike-perch fillet \"grenobloise\" with capers, beetroot, melted butter and mashed potatoes"
+       "n": "Stekt panerad spättafilé med dansk remouladsås och dillslungad potatis",
+       "en": "Fried breaded plaice fillet with Danish remoulade sauce and dill-tossed potatoes"
       },
       {
        "t": "veg",
-       "n": "Färsk fylld tortellini med spenat och ricotta, tomatsås, pinjenötter och grana padano",
-       "en": "Fresh filled tortellini with spinach and ricotta, tomato sauce, pine nuts and grana padano"
+       "n": "Färsk fylld tortellini med spenat och ricotta, ädelostsås, pinjenötter och grana padano",
+       "en": "Fresh filled tortellini with spinach and ricotta, blue cheese sauce, pine nuts and grana padano"
       }
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
@@ -453,7 +453,7 @@
   },
   "lillaangel": {
    "status": "fel",
-   "note": "fel vecka på sidan (v. None)",
+   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
    "days": {}
   }
  }
