@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T21:29:15+01:00",
+ "updated": "2026-11-25T06:43:46+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -67,6 +67,37 @@
        "t": "veg",
        "n": "* Halloumi raggmunk serveras med lingonkeso och mixsallad",
        "en": "* Halloumi raggmunk (Swedish potato pancake) served with lingonberry cottage cheese and mixed salad"
+      }
+     ],
+     "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
+     "extra_en": "Today's extra: TODAY BREDBAR'S HOMEMADE SOFT COOKIES ARE ON THE HOUSE. Tip: Health plate with chicken/falafel, hummus, mint yoghurt, egg, pomegranate etc., 145 kr."
+    },
+    "2026-11-25": {
+     "dishes": [
+      {
+       "t": "kott",
+       "n": "Krispig panko panerad kycklingschnitzel med rödvinsås, coleslaw och stekt potatis",
+       "en": "Crispy panko-breaded chicken schnitzel with red wine sauce, coleslaw and fried potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Fläsknoisetter \"black och white\" med bea, rödvinsås, grön sparris och stekt potatis",
+       "en": "Pork noisettes \"black and white\" with béarnaise, red wine sauce, green asparagus and fried potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Sirapglaserade kåldolmar med gräddsås, lingon och mos",
+       "en": "Syrup-glazed kåldolmar (Swedish stuffed cabbage rolls) with cream sauce, lingonberries and mashed potatoes"
+      },
+      {
+       "t": "fisk",
+       "n": "Stekt gösfilé \"grenobloise\" kapris, rödbetor, skirat smör och mos¨",
+       "en": "Pan-fried pike-perch fillet \"grenobloise\" with capers, beetroot, melted butter and mashed potatoes"
+      },
+      {
+       "t": "veg",
+       "n": "Färsk fylld tortellini med spenat och ricotta, tomatsås, pinjenötter och grana padano",
+       "en": "Fresh filled tortellini with spinach and ricotta, tomato sauce, pine nuts and grana padano"
       }
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
@@ -396,6 +427,27 @@
      ],
      "extra": "Dagens tips: stekt sejfilé",
      "extra_en": "Today's tip: fried pollock fillet"
+    },
+    "2026-11-25": {
+     "dishes": [
+      {
+       "t": "veg",
+       "n": "Stekt rökt tofu med röd curry, paprika, kokosmjölk",
+       "en": "Fried smoked tofu with red curry, bell pepper and coconut milk"
+      },
+      {
+       "t": "kott",
+       "n": "Dagens fångst med fänkål och saffranssås",
+       "en": "Catch of the day with fennel and saffron sauce"
+      },
+      {
+       "t": "kott",
+       "n": "Kycklinggryta provencal med tomat, grädde, örter",
+       "en": "Chicken stew provençal with tomato, cream and herbs"
+      }
+     ],
+     "extra": "Dagens tips: dagens fångst",
+     "extra_en": "Today's tip: catch of the day"
     }
    }
   },
