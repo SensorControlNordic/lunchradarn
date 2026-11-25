@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T08:43:45+01:00",
+ "updated": "2026-11-25T09:43:51+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -96,8 +96,8 @@
       },
       {
        "t": "veg",
-       "n": "Färsk fylld tortellini med spenat och ricotta, ädelostsås, pinjenötter och grana padano",
-       "en": "Fresh filled tortellini with spinach and ricotta, blue cheese sauce, pine nuts and grana padano"
+       "n": "Färsk fylld tortellini med spenat och ricotta, rödpesto, pinjenötter och grana padano",
+       "en": "Fresh filled tortellini with spinach and ricotta, red pesto, pine nuts and grana padano"
       }
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE MJUKA KAKOR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
@@ -453,7 +453,7 @@
   },
   "lillaangel": {
    "status": "fel",
-   "note": "(Caused by NewConnectionError(\"HTTPSConnection(host='www.lillaangel.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+   "note": "fel vecka på sidan (v. None)",
    "days": {}
   }
  }
