@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T08:43:43+01:00",
+ "updated": "2026-11-26T09:43:56+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -131,9 +131,9 @@
        "en": "French beef stew \"Boeuf bourguignon\" with basmati rice"
       },
       {
-       "t": "kott",
-       "n": "Stekt lsxfilé med skagenröra och dillslungad potatis",
-       "en": "Pan-fried salmon fillet with skagenröra (Swedish prawn salad) and dill-tossed potatoes"
+       "t": "fisk",
+       "n": "Stekt laxfilé med skagenröra och dillslungad potatis",
+       "en": "Pan-fried salmon fillet with skagenröra (Swedish prawn salad with mayonnaise and dill) and dill-tossed potatoes"
       },
       {
        "t": "soppa",
