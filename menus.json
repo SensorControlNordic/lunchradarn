@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T07:43:45+01:00",
+ "updated": "2026-11-26T08:43:43+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -107,33 +107,43 @@
      "dishes": [
       {
        "t": "kott",
-       "n": "Kalvfärsmedaljonger med lingongräddsås, pressgurka och mos",
-       "en": "Veal mince medallions with lingonberry cream sauce, pressgurka (Swedish pickled cucumber) and mashed potatoes"
+       "n": "Oxfärsbiff med stekt ägg, rödvinsky, saltgurka och mos/stekt potatis",
+       "en": "Beef patty with fried egg, red wine jus, pickled cucumber and mashed or fried potatoes"
       },
       {
        "t": "kott",
-       "n": "Lasagne al forno med tomatsås, ruccola och grana padano",
-       "en": "Lasagne al forno with tomato sauce, rocket and grana padano"
+       "n": "\"Beef patty with fried egg, red wine gravy, pickled cucumber, and mashed or fried potatoes\"",
+       "en": "Beef patty with fried egg, red wine gravy, pickled cucumber and mashed or fried potatoes"
       },
       {
        "t": "kott",
-       "n": "Fransk högrevsgryta \"Du chef\" med basmatiris",
-       "en": "French beef stew \"Du chef\" with basmati rice"
+       "n": "Fläsknoisetter \"nobis\" med bea, rödvinsås, grön sparris och stekt potatis",
+       "en": "Pork noisettes \"Nobis\" with béarnaise, red wine sauce, green asparagus and fried potatoes"
       },
       {
-       "t": "fisk",
-       "n": "Panerad spättafilé serveras med skagenröra och dillslungad potatis",
-       "en": "Breaded plaice fillet served with skagenröra (Swedish prawn salad) and dill-tossed potatoes"
+       "t": "kott",
+       "n": "\"Pork noisettes \"Nobis\" with béarnaise sauce, red wine sauce, green asparagus och fried potatoes\"",
+       "en": "Pork noisettes \"Nobis\" with béarnaise sauce, red wine sauce, green asparagus and fried potatoes"
+      },
+      {
+       "t": "kott",
+       "n": "Fransk oxgryta \"Bouef bourguignon\" med basmatiris",
+       "en": "French beef stew \"Boeuf bourguignon\" with basmati rice"
+      },
+      {
+       "t": "kott",
+       "n": "Stekt lsxfilé med skagenröra och dillslungad potatis",
+       "en": "Pan-fried salmon fillet with skagenröra (Swedish prawn salad) and dill-tossed potatoes"
       },
       {
        "t": "soppa",
-       "n": "Kantarellsoppa",
-       "en": "Chanterelle soup"
+       "n": "Ärtsoppa",
+       "en": "Ärtsoppa (Swedish yellow pea soup)"
       },
       {
        "t": "veg",
-       "n": "Morot och zucchinibiffar med gräddsås, pressgurka och mos",
-       "en": "Carrot and zucchini patties with cream sauce, pressgurka (Swedish pickled cucumber) and mashed potatoes"
+       "n": "Färsk fylld spenat och ricotta tortellini med rödpestosås, pinjenötter och grana padano",
+       "en": "Fresh tortellini filled with spinach and ricotta, with red pesto sauce, pine nuts and grana padano"
       }
      ],
      "extra": "Dagens extra: IDAG BJUDS DET PÅ BREDBARS HEMLAGADE PANNKAKSBUFFÉ och PASSANDE TILLBEHÖR. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
