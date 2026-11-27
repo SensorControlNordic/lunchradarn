@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T08:43:48+01:00",
+ "updated": "2026-11-27T09:44:15+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -158,18 +158,19 @@
       },
       {
        "t": "fisk",
-       "n": "Stekt laxfilé med sandefjordsås, citron och dillslungad potatis",
-       "en": "Fried salmon fillet with Sandefjord sauce, lemon and dill-tossed potatoes"
+       "n": "Saffransdoftande fisk och skaldjursgryta med kokt potatis, aioli och krutonger"
       },
       {
        "t": "kott",
-       "n": "Brässerad kycklingfilé \"coq au vin\" med bacon, champinjoner och syltlök och mos/ris",
-       "en": "Braised chicken fillet \"coq au vin\" with bacon, mushrooms and pickled pearl onions, with mash or rice"
+       "n": "Brässerad kycklingfilé \"Greek style\" med tomatsås, fetaost, kalamata oliver och ris'"
+      },
+      {
+       "t": "kott",
+       "n": "Bredbars hemlagade köttbullar med gräddsås, lingon, pressgurka och mos"
       },
       {
        "t": "veg",
-       "n": "French beef chuck stew \"du chef\" with basmati rice",
-       "en": "French beef chuck stew \"du chef\" with basmati rice"
+       "n": "Stekt halloumi på spett med tzatziki, mixsallad och stekt potatis"
       }
      ],
      "extra": "Dagens extra: Bredbars hemlagade äppelpaj och vaniljsås. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
