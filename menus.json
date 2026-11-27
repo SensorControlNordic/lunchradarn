@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T11:05:55+01:00",
+ "updated": "2026-11-27T16:34:38+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -183,7 +183,8 @@
    }
   },
   "matronan": {
-   "status": "ok",
+   "status": "fel",
+   "note": "fel vecka på sidan (v. 49)",
    "days": {
     "2026-11-23": {
      "dishes": [
