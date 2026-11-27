@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T07:43:46+01:00",
+ "updated": "2026-11-27T08:43:48+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -545,13 +545,23 @@
     "2026-11-27": {
      "dishes": [
       {
+       "t": "veg",
+       "n": "Oumph lasagne med sås på färska tomater",
+       "en": "Oumph lasagne with fresh tomato sauce"
+      },
+      {
+       "t": "fisk",
+       "n": "Bakad lax med basilika crème",
+       "en": "Baked salmon with basil crème"
+      },
+      {
        "t": "kott",
-       "n": "Kockens val",
-       "en": "Chef's choice"
+       "n": "Asiatisk pulled chicken med pac choi, bröd",
+       "en": "Asian-style pulled chicken with pak choi, bread"
       }
      ],
-     "extra": "Dagens tips: kockens val",
-     "extra_en": "Today's tip: chef's choice"
+     "extra": "Dagens tips: bakad lax",
+     "extra_en": "Today's tip: baked salmon"
     }
    }
   },
