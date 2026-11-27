@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T09:44:15+01:00",
+ "updated": "2026-11-27T10:43:44+01:00",
  "week": 48,
  "restaurants": {
   "bredbar": {
@@ -158,19 +158,23 @@
       },
       {
        "t": "fisk",
-       "n": "Saffransdoftande fisk och skaldjursgryta med kokt potatis, aioli och krutonger"
+       "n": "Saffransdoftande fisk och skaldjursgryta med kokt potatis, aioli och krutonger",
+       "en": "Saffron-scented fish and shellfish stew with boiled potatoes, aioli and croutons"
       },
       {
        "t": "kott",
-       "n": "Brässerad kycklingfilé \"Greek style\" med tomatsås, fetaost, kalamata oliver och ris'"
+       "n": "Brässerad kycklingfilé \"Greek style\" med tomatsås, fetaost, kalamata oliver och ris'",
+       "en": "Braised chicken fillet \"Greek style\" with tomato sauce, feta cheese, kalamata olives and rice"
       },
       {
        "t": "kott",
-       "n": "Bredbars hemlagade köttbullar med gräddsås, lingon, pressgurka och mos"
+       "n": "Bredbars hemlagade köttbullar med gräddsås, lingon, pressgurka och mos",
+       "en": "Bredbars homemade köttbullar (Swedish meatballs) with cream sauce, lingonberries, pickled cucumber and mashed potatoes"
       },
       {
        "t": "veg",
-       "n": "Stekt halloumi på spett med tzatziki, mixsallad och stekt potatis"
+       "n": "Stekt halloumi på spett med tzatziki, mixsallad och stekt potatis",
+       "en": "Fried halloumi skewer with tzatziki, mixed salad and fried potatoes"
       }
      ],
      "extra": "Dagens extra: Bredbars hemlagade äppelpaj och vaniljsås. Tips: Hälsotallrik med kyckling/falafel, hummus, mynta yoghurt, ägg, granatäpple m.m, 145 kr.",
